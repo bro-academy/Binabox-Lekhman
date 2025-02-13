@@ -1,5 +1,5 @@
 # Binabox - homework project
 
-Student: 
+Student: Serhii Lekhman
 
-Mentor: 
+Mentor: Artemii Onuchin
