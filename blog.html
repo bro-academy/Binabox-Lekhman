@@ -8,101 +8,198 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Binabox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
     <!--  HEADER SECTION START -->
     <header class="header">
-      <!-- line 18 === if some geometry is needed for the element class="logo logo--header" I will add a mix of classes class="header__logo" -->
-      <img class="logo logo--header" src="./image/logo.svg" alt="Binabox logo" />
-      <nav class="nav">
-        <a class="nav__link nav__link--current" href="/index.html" title="Home page">Home</a>
-        <!-- line 22 === Made a temporary link for the header navigation on the homepage - blog page to the blog-item.html page. -->
-        <a class="nav__link" href="/blog.html" title="Blog page">Blog</a>
-        <a class="nav__link" href="#" title="Catalog page">Catalog</a>
-        <a class="nav__link" href="#" title="Contact about our company"> Contact Us </a>
+      <div class="logo">
+        <svg class="logo__icon" width="36" height="40" alt="Binabox logo">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+        <svg class="logo__icon-text-white" width="135" height="21" alt="Binabox logo">
+          <use href="./images/icons.svg#icon-logo-text-white"></use>
+        </svg>
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav__link nav__link--current" href="./index.html" aria-labelledby="nav-home">
+          <span id="nav-home">Home</span>
+        </a>
+        <a class="nav__link" href="./blog.html" aria-labelledby="nav-blog">
+          <span id="nav-blog">Blog</span>
+        </a>
+        <a class="nav__link" href="#" aria-labelledby="nav-catalog">
+          <span id="nav-catalog">Catalog</span>
+        </a>
+        <a class="nav__link" href="#" aria-labelledby="nav-contact">
+          <span id="nav-contact">Contact Us</span>
+        </a>
       </nav>
       <div class="header__contacts">
-        <a class="button" href="#" title="Our contact on discord" target="_blank">Discord</a>
-        <button class="button button--primary" type="button">Connect</button>
+        <search class="search header__search">
+          <form class="search__form">
+            <input
+              class="text-small search__input"
+              type="search"
+              name="search"
+              placeholder="Search"
+              aria-label="Search through site content"
+            />
+            <svg class="search__icon" width="24" height="24" aria-hidden="true">
+              <use href="./images/icons.svg#icon-search"></use>
+            </svg>
+          </form>
+        </search>
+        <a class="button" href="#" aria-labelledby="discord-btn" target="_blank">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="./images/icons.svg#icon-discord"></use>
+          </svg>
+          <span id="discord-btn">Discord</span>
+        </a>
+        <button class="button button--primary" type="button" aria-labelledby="connect-wallet-btn">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="./images/icons.svg#icon-wallet-03"></use>
+          </svg>
+          <span id="connect-wallet-btn">Connect</span>
+        </button>
       </div>
     </header>
     <!--  HEADER SECTION END -->
 
     <main>
       <!-- BREADCRUMBS SECTION START -->
-      <!-- in this section there will be background Image -->
       <section class="breadcrumbs">
-        <h1 class="breadcrumbs__title">Our blog</h1>
-        <nav class="breadcrumbs__nav">
-          <a class="breadcrumbs__link" href="/index.html" title="Home page">Home</a>
-          <span class="breadcrumbs__link breadcrumbs__link--disabled">Our blog</span>
+        <h1 id="page-title" class="title-xl breadcrumbs__title">Our blog</h1>
+        <nav class="breadcrumbs__nav" aria-label="Breadcrumb navigation">
+          <a
+            class="button-transparent-s text-small-bold breadcrumbs__link"
+            href="./index.html"
+            aria-labelledby="bread-home"
+          >
+            <span id="bread-home">Home</span>
+          </a>
+          <span
+            class="button-transparent-s text-small-bold breadcrumbs__link breadcrumbs__link--disabled"
+            aria-current="page"
+            >Our blog</span
+          >
         </nav>
       </section>
       <!--  BREADCRUMBS SECTION END -->
 
       <!-- OUR BLOG SECTION START -->
-      <section class="blog">
+      <section class="blog section">
         <ul class="events">
           <li class="events-item">
             <article class="event">
               <a
                 class="event__link"
-                href="/blog-item.html"
-                title="The Basilisks NFT"
+                href="./blog-item.html"
+                title="Event Sonic live"
                 target="_blank"
+                aria-labelledby="event-sonic-face"
               >
-                <img class="event__img" src="#" alt="The Basilisks NFT" />
+                <div class="img-wrapper">
+                  <img
+                    class="event__img"
+                    src="./images/our-blog/event0/face.webp"
+                    alt="Image-Library-NFT-Picture face"
+                  />
+                  <span class="img-tag">NFT</span>
+                </div>
               </a>
               <div class="event-info">
                 <div class="event-info__name">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-user-02"></use>
+                  </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-calendar"></use>
+                  </svg>
                   <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
                 </div>
               </div>
               <a
                 class="event__link"
-                href="/blog-item.html"
+                href="./blog-item.html"
                 title="Event Sonic live"
                 target="_blank"
+                aria-labelledby="event-sonic-face"
               >
-                <h3 class="event__title">Sonic live</h3>
+                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
               </a>
               <p class="event__text">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
               </p>
               <a
                 class="event__link button event__button"
-                href="/blog-item.html"
+                href="./blog-item.html"
                 title="Event Sonic live"
                 target="_blank"
+                aria-labelledby="read-more-face"
               >
-                Read more >
+                <span id="read-more-face">Read more</span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
               </a>
             </article>
           </li>
           <li class="events-item">
             <article class="event">
-              <a class="event__link" href="#" title="Event Sonic live" target="_blank">
-                <img class="event__img" src="#" alt="Image-Library-NFT-Picture" />
+              <a
+                class="event__link"
+                href="#"
+                title="Event Sonic live"
+                target="_blank"
+                aria-labelledby="event-sonic-scull"
+              >
+                <div class="img-wrapper">
+                  <img
+                    class="event__img"
+                    src="./images/our-blog/event1/scull.webp"
+                    alt="Image-Library-NFT-Picture scull"
+                  />
+                  <span class="img-tag">NFT</span>
+                </div>
               </a>
               <div class="event-info">
                 <div class="event-info__name">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-user-02"></use>
+                  </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-calendar"></use>
+                  </svg>
                   <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
                 </div>
               </div>
-              <a class="event__link" href="#" title="Event Sonic live" target="_blank">
-                <h3 class="event__title">Sonic live</h3>
+              <a
+                class="event__link"
+                href="#"
+                title="Event Sonic live"
+                target="_blank"
+                aria-labelledby="event-sonic-face"
+              >
+                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
               </a>
               <p class="event__text">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
@@ -112,28 +209,55 @@
                 href="#"
                 title="Event Sonic live"
                 target="_blank"
+                aria-labelledby="read-more-face"
               >
-                Read more >
+                <span id="read-more-face">Read more</span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
               </a>
             </article>
           </li>
           <li class="events-item">
             <article class="event">
-              <a class="event__link" href="#" title="Event Sonic live" target="_blank">
-                <img class="event__img" src="#" alt="Image-Library-NFT-Picture" />
+              <a
+                class="event__link"
+                href="#"
+                title="Event Sonic live"
+                target="_blank"
+                aria-labelledby="event-sonic-cat-blog"
+              >
+                <div class="img-wrapper">
+                  <img
+                    class="event__img"
+                    src="./images/our-blog/event2/cat-blog.webp"
+                    alt="Image-Library-NFT-Picture cat-blog"
+                  />
+                  <span class="img-tag">NFT</span>
+                </div>
               </a>
               <div class="event-info">
                 <div class="event-info__name">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-user-02"></use>
+                  </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-calendar"></use>
+                  </svg>
                   <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
                 </div>
               </div>
-              <a class="event__link" href="#" title="Event Sonic live" target="_blank">
-                <h3 class="event__title">Sonic live</h3>
+              <a
+                class="event__link"
+                href="#"
+                title="Event Sonic live"
+                target="_blank"
+                aria-labelledby="event-sonic-face"
+              >
+                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
               </a>
               <p class="event__text">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
@@ -143,28 +267,55 @@
                 href="#"
                 title="Event Sonic live"
                 target="_blank"
+                aria-labelledby="read-more-face"
               >
-                Read more >
+                <span id="read-more-face">Read more</span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
               </a>
             </article>
           </li>
           <li class="events-item">
             <article class="event">
-              <a class="event__link" href="#" title="Event Sonic live" target="_blank">
-                <img class="event__img" src="#" alt="Image-Library-NFT-Picture" />
+              <a
+                class="event__link"
+                href="#"
+                title="Event Sonic live"
+                target="_blank"
+                aria-labelledby="event-sonic-monkey"
+              >
+                <div class="img-wrapper">
+                  <img
+                    class="event__img"
+                    src="./images/our-blog/event3/monkey.webp"
+                    alt="Image-Library-NFT-Picture monkey"
+                  />
+                  <span class="img-tag">NFT</span>
+                </div>
               </a>
               <div class="event-info">
                 <div class="event-info__name">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-user-02"></use>
+                  </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-calendar"></use>
+                  </svg>
                   <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
                 </div>
               </div>
-              <a class="event__link" href="#" title="Event Sonic live" target="_blank">
-                <h3 class="event__title">Sonic live</h3>
+              <a
+                class="event__link"
+                href="#"
+                title="Event Sonic live"
+                target="_blank"
+                aria-labelledby="event-sonic-face"
+              >
+                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
               </a>
               <p class="event__text">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
@@ -174,28 +325,55 @@
                 href="#"
                 title="Event Sonic live"
                 target="_blank"
+                aria-labelledby="read-more-face"
               >
-                Read more >
+                <span id="read-more-face">Read more</span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
               </a>
             </article>
           </li>
           <li class="events-item">
             <article class="event">
-              <a class="event__link" href="#" title="Event Sonic live" target="_blank">
-                <img class="event__img" src="#" alt="Image-Library-NFT-Picture" />
+              <a
+                class="event__link"
+                href="#"
+                title="Event Sonic live"
+                target="_blank"
+                aria-labelledby="event-sonic-duck"
+              >
+                <div class="img-wrapper">
+                  <img
+                    class="event__img"
+                    src="./images/our-blog/event4/duck.webp"
+                    alt="Image-Library-NFT-Picture duck"
+                  />
+                  <span class="img-tag">NFT</span>
+                </div>
               </a>
               <div class="event-info">
                 <div class="event-info__name">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-user-02"></use>
+                  </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-calendar"></use>
+                  </svg>
                   <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
                 </div>
               </div>
-              <a class="event__link" href="#" title="Event Sonic live" target="_blank">
-                <h3 class="event__title">Sonic live</h3>
+              <a
+                class="event__link"
+                href="#"
+                title="Event Sonic live"
+                target="_blank"
+                aria-labelledby="event-sonic-face"
+              >
+                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
               </a>
               <p class="event__text">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
@@ -205,28 +383,55 @@
                 href="#"
                 title="Event Sonic live"
                 target="_blank"
+                aria-labelledby="read-more-face"
               >
-                Read more >
+                <span id="read-more-face">Read more</span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
               </a>
             </article>
           </li>
           <li class="events-item">
             <article class="event">
-              <a class="event__link" href="#" title="Event Sonic live" target="_blank">
-                <img class="event__img" src="#" alt="Image-Library-NFT-Picture" />
+              <a
+                class="event__link"
+                href="#"
+                title="Event Sonic live"
+                target="_blank"
+                aria-labelledby="event-sonic-gadget-blog"
+              >
+                <div class="img-wrapper">
+                  <img
+                    class="event__img"
+                    src="./images/our-blog/event5/gadget-blog.webp"
+                    alt="Image-Library-NFT-Picture gadget-blog"
+                  />
+                  <span class="img-tag">NFT</span>
+                </div>
               </a>
               <div class="event-info">
                 <div class="event-info__name">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-user-02"></use>
+                  </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
-                  <!-- <svg></svg> -->
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-calendar"></use>
+                  </svg>
                   <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
                 </div>
               </div>
-              <a class="event__link" href="#" title="Event Sonic live" target="_blank">
-                <h3 class="event__title">Sonic live</h3>
+              <a
+                class="event__link"
+                href="#"
+                title="Event Sonic live"
+                target="_blank"
+                aria-labelledby="event-sonic-face"
+              >
+                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
               </a>
               <p class="event__text">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
@@ -236,35 +441,51 @@
                 href="#"
                 title="Event Sonic live"
                 target="_blank"
+                aria-labelledby="read-more-face"
               >
-                Read more >
+                <span id="read-more-face">Read more</span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
               </a>
             </article>
           </li>
         </ul>
-        <section class="pagination">
-					<a class="pagination__link" href="#" title="Previous page">
-            <!-- <svg class="pagination__icon"></svg> -->
-						<button class="button-icon" type="button">&lt;</button>
+        <section class="pagination" aria-label="Page navigation">
+          <a class="pagination__link" href="#" aria-labelledby="prev-page">
+            <button class="button-icon" type="button">
+              <span id="prev-page" class="visually-hidden">Previous page</span>
+              &lt;
+            </button>
           </a>
-					<a class="pagination__link" href="#" title="First page">
-						<button class="button-number button-number--primary" type="button">1</button>
+          <a class="pagination__link" href="#" aria-labelledby="page-1">
+            <button class="button-number button-number--primary" type="button">
+              <span id="page-1">1</span>
+            </button>
           </a>
-					<a class="pagination__link" href="#" title="Second page">
-						<button class="button-number" type="button">2</button>
+          <a class="pagination__link" href="#" aria-labelledby="page-2">
+            <button class="button-number" type="button">
+              <span id="page-2">2</span>
+            </button>
           </a>
-					<a class="pagination__link" href="#" title="Third page">
-						<button class="button-number" type="button">3</button>
+          <a class="pagination__link" href="#" aria-labelledby="page-3">
+            <button class="button-number" type="button">
+              <span id="page-3">3</span>
+            </button>
           </a>
-					<a class="pagination__link" href="#" title="More page">
-						<!-- <svg class="pagination__icon"></svg> -->
-						<button class="button-icon" type="button">...</button>
+          <a class="pagination__link" href="#" aria-labelledby="more-pages">
+            <button class="button-icon" type="button">
+              <span id="more-pages" class="visually-hidden">More pages</span>
+              ...
+            </button>
           </a>
-					<a class="pagination__link" href="#" title="Next page">
-            <!-- <svg class="pagination__icon"></svg> -->
-						<button class="button-icon" type="button">&gt;</button>
+          <a class="pagination__link" href="#" aria-labelledby="next-page">
+            <button class="button-icon" type="button">
+              <span id="next-page" class="visually-hidden">Next page</span>
+              &gt;
+            </button>
           </a>
-				</section>
+        </section>
       </section>
       <!-- OUR BLOG SECTION END -->
     </main>
@@ -273,69 +494,92 @@
     <footer class="footer">
       <div class="footer__top">
         <div class="footer__logo-slogan">
-          <img class="logo logo--footer" src="./image/logo.svg" alt="Binabox logo" />
-          <p class="footer__slogan">We are the best way to check the rarity of NFT collection.</p>
+          <div class="logo footer__logo">
+            <svg class="logo__icon" width="36" height="40" alt="Binabox logo">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            <svg class="logo__icon-text-blue" width="135" height="21" alt="Binabox logo">
+              <use href="./images/icons.svg#icon-logo-text-blue"></use>
+            </svg>
+          </div>
+          <p class="text-small footer__slogan">
+            We are the best way to check the rarity of NFT<br />collection.
+          </p>
         </div>
-        <div>
-          <p class="footer__title">Subscribe</p>
-          <nav class="footer__nav">
-            <a class="footer__nav-link" href="/index.html" title="Home page">Home</a>
-            <a class="footer__nav-link" href="/blog.html" title="Blog page">Blog</a>
-            <a class="footer__nav-link" href="#" title="Catalog page">Catalog</a>
-            <a class="footer__nav-link" href="#" title="Contact about our company">Contact Us</a>
-          </nav>
-        </div>
-        <div>
-          <p class="footer__title">Company</p>
-          <nav class="footer__nav">
-            <a class="footer__nav-link" href="#" title="Terms Canditions" target="_blank"
-              >Terms Canditions</a
-            >
-            <a class="footer__nav-link" href="#" title="Privacy Policy" target="_blank"
-              >Privacy Policy</a
-            >
-            <a class="footer__nav-link" href="#" title="Whitepaper" target="_blank">Whitepaper</a>
-            <a class="footer__nav-link" href="#" title="Help Center" target="_blank">Help Center</a>
-          </nav>
+        <div class="footer__navs">
+          <div>
+            <p id="subscribe-nav" class="footer__title">Subscribe</p>
+            <nav class="footer__nav" aria-labelledby="subscribe-nav">
+              <a class="footer__nav-link" href="./index.html" aria-labelledby="footer-home">
+                <span id="footer-home">Home</span>
+              </a>
+              <a class="footer__nav-link" href="./blog.html" aria-labelledby="footer-blog">
+                <span id="footer-blog">Blog</span>
+              </a>
+              <a class="footer__nav-link" href="#" aria-labelledby="footer-catalog">
+                <span id="footer-catalog">Catalog</span>
+              </a>
+              <a class="footer__nav-link" href="#" aria-labelledby="footer-contact">
+                <span id="footer-contact">Contact Us</span>
+              </a>
+            </nav>
+          </div>
+          <div>
+            <p id="company-nav" class="footer__title">Company</p>
+            <nav class="footer__nav" aria-labelledby="company-nav">
+              <a class="footer__nav-link" href="#" aria-labelledby="footer-terms">
+                <span id="footer-terms">Terms Conditions</span>
+              </a>
+              <a class="footer__nav-link" href="#" aria-labelledby="footer-privacy">
+                <span id="footer-privacy">Privacy Policy</span>
+              </a>
+              <a class="footer__nav-link" href="#" aria-labelledby="footer-whitepaper">
+                <span id="footer-whitepaper">Whitepaper</span>
+              </a>
+              <a class="footer__nav-link" href="#" aria-labelledby="footer-help">
+                <span id="footer-help">Help Center</span>
+              </a>
+            </nav>
+          </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copyright">
+        <p class="text-small footer__copyright">
           <span class="footer__copyright-span">Binabox</span> 2025 -
           <span class="footer__copyright-span">All</span> rights reserved
         </p>
-        <ul class="socials">
-          <li class="socials__item">
-            <a class="socials__link" href="#" title="Our Twitter contact" target="_blank">
-              Twitter<!-- <svg>Twitter</svg> -->
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" title="Our Facebook contact" target="_blank">
-              Facebook<!-- <svg>Facebook</svg> -->
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" title="Our Telegram contact" target="_blank">
-              Telegram<!-- <svg>Telegram</svg> -->
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" title="Our YOUTUBE contact" target="_blank">
-              YOUTUBE<!-- <svg>YOUTUBE</svg> -->
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" title="Our Ticktok contact" target="_blank">
-              Ticktok<!-- <svg>Ticktok</svg> -->
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" title="Our Discord contact" target="_blank">
-              Discord<!-- <svg>Discord</svg> -->
-            </a>
-          </li>
-        </ul>
+        <div class="socials">
+          <a class="socials__link" href="#" target="_blank" aria-label="Our Twitter">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Our Facebook">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Our Telegram">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Our YouTube">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="./images/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Our TikTok">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="./images/icons.svg#icon-tiktok"></use>
+            </svg>
+          </a>
+          <a class="socials__link" href="#" target="_blank" aria-label="Our Discord">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="./images/icons.svg#icon-discord"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
     <!-- FOOTER SECTION END -->
