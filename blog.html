@@ -452,39 +452,34 @@
           </li>
         </ul>
         <section class="pagination" aria-label="Page navigation">
-          <a class="pagination__link" href="#" aria-labelledby="prev-page">
-            <button class="button-icon" type="button">
-              <span id="prev-page" class="visually-hidden">Previous page</span>
-              &lt;
-            </button>
-          </a>
-          <a class="pagination__link" href="#" aria-labelledby="page-1">
-            <button class="button-number button-number--primary" type="button">
-              <span id="page-1">1</span>
-            </button>
-          </a>
-          <a class="pagination__link" href="#" aria-labelledby="page-2">
-            <button class="button-number" type="button">
-              <span id="page-2">2</span>
-            </button>
-          </a>
-          <a class="pagination__link" href="#" aria-labelledby="page-3">
-            <button class="button-number" type="button">
-              <span id="page-3">3</span>
-            </button>
-          </a>
-          <a class="pagination__link" href="#" aria-labelledby="more-pages">
-            <button class="button-icon" type="button">
-              <span id="more-pages" class="visually-hidden">More pages</span>
-              ...
-            </button>
-          </a>
-          <a class="pagination__link" href="#" aria-labelledby="next-page">
-            <button class="button-icon" type="button">
-              <span id="next-page" class="visually-hidden">Next page</span>
-              &gt;
-            </button>
-          </a>
+          <button class="button-icon" type="button" aria-labelledby="prev-page">
+            <span id="prev-page" class="visually-hidden">Previous page</span>
+            <svg width="24" height="24" aria-hidden="true">
+              <use class="button-icon__icon" href="./images/icons.svg#icon-chevron-left"></use>
+            </svg>
+          </button>
+          <button class="button-icon pagination__button" type="button" aria-labelledby="page-1">
+            <span id="page-1" class="visually-hidden">page 1</span>
+            1
+          </button>
+          <button class="button-icon pagination__button" type="button" aria-labelledby="page-2">
+            <span id="page-2" class="visually-hidden">page 2</span>
+            2
+          </button>
+          <button class="button-icon pagination__button" type="button" aria-labelledby="page-3">
+            <span id="page-3" class="visually-hidden">page 3</span>
+            3
+          </button>
+          <button class="button-icon pagination__button" type="button" aria-labelledby="more-pages">
+            <span id="more-pages" class="visually-hidden">More pages</span>
+            ...
+          </button>
+          <button class="button-icon" type="button" aria-labelledby="next-page">
+            <span id="next-page" class="visually-hidden">Next page</span>
+            <svg width="24" height="24" aria-hidden="true">
+              <use class="button-icon__icon" href="./images/icons.svg#icon-chevron-right"></use>
+            </svg>
+          </button>
         </section>
       </section>
       <!-- OUR BLOG SECTION END -->
