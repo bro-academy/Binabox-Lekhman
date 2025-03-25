@@ -19,21 +19,35 @@
       type="text/css"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
     <!--  HEADER SECTION START -->
     <header class="header">
       <div class="logo">
-        <svg class="logo__icon" width="36" height="40" aria-label="Binabox logo">
-          <use href="./images/icons.svg#icon-logo"></use>
+        <svg
+          class="logo__icon"
+          width="36"
+          height="40"
+          aria-label="Binabox logo"
+        >
+          <use href="./src/images/sprite/icons.svg#icon-logo"></use>
         </svg>
-        <svg class="logo__icon-text-white" width="135" height="21" aria-label="Binabox logo">
-          <use href="./images/icons.svg#icon-logo-text-white"></use>
+        <svg
+          class="logo__icon-text-white"
+          width="135"
+          height="21"
+          aria-label="Binabox logo"
+        >
+          <use href="./src/images/sprite/icons.svg#icon-logo-text-white"></use>
         </svg>
       </div>
       <nav class="nav" aria-label="Main navigation">
-        <a class="nav__link nav__link--current" href="./index.html" aria-labelledby="nav-home">
+        <a
+          class="nav__link nav__link--current"
+          href="./index.html"
+          aria-labelledby="nav-home"
+        >
           <span id="nav-home">Home</span>
         </a>
         <a class="nav__link" href="./blog.html" aria-labelledby="nav-blog">
@@ -56,22 +70,40 @@
               placeholder="Search"
               aria-label="Search through site content"
             />
-            <button class="search__button" type="submit" aria-label="Submit button of search form">
-              <svg class="search__icon" width="24" height="24" aria-hidden="true">
-                <use href="./images/icons.svg#icon-search"></use>
+            <button
+              class="search__button"
+              type="submit"
+              aria-label="Submit button of search form"
+            >
+              <svg
+                class="search__icon"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./src/images/sprite/icons.svg#icon-search"></use>
               </svg>
             </button>
           </form>
         </search>
-        <a class="button" href="#" aria-labelledby="discord-btn" target="_blank">
+        <a
+          class="button"
+          href="#"
+          aria-labelledby="discord-btn"
+          target="_blank"
+        >
           <svg width="24" height="24" aria-hidden="true">
-            <use href="./images/icons.svg#icon-discord"></use>
+            <use href="./src/images/sprite/icons.svg#icon-discord"></use>
           </svg>
           <span id="discord-btn">Discord</span>
         </a>
-        <button class="button button--primary" type="button" aria-labelledby="connect-wallet-btn">
+        <button
+          class="button button--primary"
+          type="button"
+          aria-labelledby="connect-wallet-btn"
+        >
           <svg width="24" height="24" aria-hidden="true">
-            <use href="./images/icons.svg#icon-wallet-03"></use>
+            <use href="./src/images/sprite/icons.svg#icon-wallet-03"></use>
           </svg>
           <span id="connect-wallet-btn">Connect</span>
         </button>
@@ -111,43 +143,78 @@
         <div class="sidebar">
           <!-- CATEGORIES SECTION START -->
           <section class="list-wrapper">
-            <h2 id="categories-title" class="title-small list-wrapper__title">Categories</h2>
+            <h2 id="categories-title" class="title-small list-wrapper__title">
+              Categories
+            </h2>
             <ul class="list">
               <li class="list__item">
-                <a class="text-small-bold list__link" href="#" aria-labelledby="cat-blog">
-                  <span id="cat-blog">Our blog</span> <span class="list__link-data">(12)</span>
+                <a
+                  class="text-small-bold list__link"
+                  href="#"
+                  aria-labelledby="cat-blog"
+                >
+                  <span id="cat-blog">Our blog</span>
+                  <span class="list__link-data">(12)</span>
                 </a>
               </li>
               <li class="list__item">
-                <a class="text-small-bold list__link" href="#" aria-labelledby="cat-metaverse">
+                <a
+                  class="text-small-bold list__link"
+                  href="#"
+                  aria-labelledby="cat-metaverse"
+                >
                   <span id="cat-metaverse">Metaverse</span>
                   <span class="list__link-data">(24)</span>
                 </a>
               </li>
               <li class="list__item">
-                <a class="text-small-bold list__link" href="#" aria-labelledby="cat-gaming">
-                  <span id="cat-gaming">Gaming</span> <span class="list__link-data">(24)</span>
+                <a
+                  class="text-small-bold list__link"
+                  href="#"
+                  aria-labelledby="cat-gaming"
+                >
+                  <span id="cat-gaming">Gaming</span>
+                  <span class="list__link-data">(24)</span>
                 </a>
               </li>
               <li class="list__item">
-                <a class="text-small-bold list__link" href="#" aria-labelledby="cat-art">
-                  <span id="cat-art">Art</span> <span class="list__link-data">(24)</span>
+                <a
+                  class="text-small-bold list__link"
+                  href="#"
+                  aria-labelledby="cat-art"
+                >
+                  <span id="cat-art">Art</span>
+                  <span class="list__link-data">(24)</span>
                 </a>
               </li>
               <li class="list__item">
-                <a class="text-small-bold list__link" href="#" aria-labelledby="cat-robot">
-                  <span id="cat-robot">Robot</span> <span class="list__link-data">(24)</span>
+                <a
+                  class="text-small-bold list__link"
+                  href="#"
+                  aria-labelledby="cat-robot"
+                >
+                  <span id="cat-robot">Robot</span>
+                  <span class="list__link-data">(24)</span>
                 </a>
               </li>
               <li class="list__item">
-                <a class="text-small-bold list__link" href="#" aria-labelledby="cat-launchpad">
+                <a
+                  class="text-small-bold list__link"
+                  href="#"
+                  aria-labelledby="cat-launchpad"
+                >
                   <span id="cat-launchpad">Launchpad</span>
                   <span class="list__link-data">(24)</span>
                 </a>
               </li>
               <li class="list__item">
-                <a class="text-small-bold list__link" href="#" aria-labelledby="cat-crypto">
-                  <span id="cat-crypto">Crypto</span> <span class="list__link-data">(430)</span>
+                <a
+                  class="text-small-bold list__link"
+                  href="#"
+                  aria-labelledby="cat-crypto"
+                >
+                  <span id="cat-crypto">Crypto</span>
+                  <span class="list__link-data">(430)</span>
                 </a>
               </li>
             </ul>
@@ -156,7 +223,9 @@
 
           <!-- TAG SECTION START -->
           <section class="list-wrapper">
-            <h2 id="tags-section" class="title-small list-wrapper__title">Tags</h2>
+            <h2 id="tags-section" class="title-small list-wrapper__title">
+              Tags
+            </h2>
             <nav class="list tag-list" aria-labelledby="tags-section">
               <a
                 class="button-s text-small-bold list__link tag-list__link"
@@ -209,7 +278,7 @@
         <section class="event-desc">
           <img
             class="event-desc__img-main"
-            src="./images/basilisks/desktop-xl/basilisks.webp"
+            src="./src/images/static/basilisks/desktop-xl/basilisks.webp"
             alt="The Basilisks NFT"
           />
           <h2 class="title event-desc__title">The Basilisks NFT</h2>
@@ -217,97 +286,113 @@
           <div class="event-info event-desc__info">
             <div class="event-info__name">
               <svg width="16" height="16" aria-hidden="true">
-                <use href="./images/icons.svg#icon-user-02"></use>
+                <use href="./src/images/sprite/icons.svg#icon-user-02"></use>
               </svg>
               <p class="event-info__text">Tony Nguyen</p>
             </div>
             <div class="event-info__time">
               <svg width="16" height="16" aria-hidden="true">
-                <use href="./images/icons.svg#icon-calendar"></use>
+                <use href="./src/images/sprite/icons.svg#icon-calendar"></use>
               </svg>
-              <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
+              <time class="event-info__text" datetime="2022-06-20"
+                >20 Jun 2022</time
+              >
             </div>
           </div>
           <p class="event-desc__text event-desc__text-main">
             The Basilisks that
-            <mark class="event-desc__text-highlight">players</mark> collect are represented with
-            NFTs on Ethereum's blockchain with real-world value. Players use the
+            <mark class="event-desc__text-highlight">players</mark> collect are
+            represented with NFTs on Ethereum's blockchain with real-world
+            value. Players use the
             <strong class="event-desc__text-strong">Basilisks they have</strong>
             gathered to battle other players to win ether (ETH).<br />
-            In Balthazar Dragons, players are immersed in a 3D open world to explore and capture
-            dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy
-            role-playing game developed on the Ethereum blockchain by a decentralized autonomous
-            organization (DAO) called the Balthazar DAO.
+            In Balthazar Dragons, players are immersed in a 3D open world to
+            explore and capture dragon-like beasts called Basilisks. Balthazar
+            Dragons is an upcoming fantasy role-playing game developed on the
+            Ethereum blockchain by a decentralized autonomous organization (DAO)
+            called the Balthazar DAO.
           </p>
           <ul class="event-desc__text-list">
             <li class="event-desc__text">
-              The Basilisks that players collect are represented with NFTs on Ethereum's blockchain
-              with real-world value. Players use the Basilisks they have gathered to battle other
-              players to win ether (ETH).
+              The Basilisks that players collect are represented with NFTs on
+              Ethereum's blockchain with real-world value. Players use the
+              Basilisks they have gathered to battle other players to win ether
+              (ETH).
             </li>
             <li class="event-desc__text">
-              In Balthazar Dragons, players are immersed in a 3D open world to explore and capture
-              dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy
-              role-playing
-              <strong class="event-desc__text-strong">game developed</strong> on the Ethereum
-              blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.
+              In Balthazar Dragons, players are immersed in a 3D open world to
+              explore and capture dragon-like beasts called Basilisks. Balthazar
+              Dragons is an upcoming fantasy role-playing
+              <strong class="event-desc__text-strong">game developed</strong> on
+              the Ethereum blockchain by a decentralized autonomous organization
+              (DAO) called the Balthazar DAO.
             </li>
           </ul>
           <ul class="event-desc__list">
             <li class="event-desc__item">
               <svg width="21" height="23" aria-hidden="true">
-                <use href="./images/icons.svg#icon-logo"></use>
+                <use href="./src/images/sprite/icons.svg#icon-logo"></use>
               </svg>
               <p class="event-desc__text">List name 1</p>
             </li>
             <li class="event-desc__item">
               <svg width="21" height="23" aria-hidden="true">
-                <use href="./images/icons.svg#icon-logo"></use>
+                <use href="./src/images/sprite/icons.svg#icon-logo"></use>
               </svg>
               <p class="event-desc__text">List name 2</p>
             </li>
             <li class="event-desc__item">
               <svg width="21" height="23" aria-hidden="true">
-                <use href="./images/icons.svg#icon-logo"></use>
+                <use href="./src/images/sprite/icons.svg#icon-logo"></use>
               </svg>
               <p class="event-desc__text">List name 3</p>
             </li>
             <li class="event-desc__item">
               <svg width="21" height="23" aria-hidden="true">
-                <use href="./images/icons.svg#icon-logo"></use>
+                <use href="./src/images/sprite/icons.svg#icon-logo"></use>
               </svg>
               <p class="event-desc__text">List name 4</p>
             </li>
           </ul>
           <div class="event-desc__blockquote">
-            <blockquote class="event-desc__subtitle event-desc__blockquote-title">
-              "The first huge metaverse arena to arrange live sports, hang out and even make bets
-              and wagers"
+            <blockquote
+              class="event-desc__subtitle event-desc__blockquote-title"
+            >
+              "The first huge metaverse arena to arrange live sports, hang out
+              and even make bets and wagers"
             </blockquote>
             <div class="event-desc__blockquote-info">
               <svg width="16" height="17" aria-hidden="true">
-                <use href="./images/icons.svg#icon-stars-02"></use>
+                <use href="./src/images/sprite/icons.svg#icon-stars-02"></use>
               </svg>
-              <span class="text-small-bold event-desc__blockquote-rate">8.5/10</span>
-              <cite class="text-small-bold event-desc__blockquote-cite">Markout Corporation</cite>
+              <span class="text-small-bold event-desc__blockquote-rate"
+                >8.5/10</span
+              >
+              <cite class="text-small-bold event-desc__blockquote-cite"
+                >Markout Corporation</cite
+              >
             </div>
           </div>
           <div class="event-desc__imgs">
             <figure class="event-desc__figure">
               <img
                 class="event-desc__img"
-                src="./images/basilisks/desktop-xl/basilisks1.webp"
+                src="./src/images/static/basilisks/desktop-xl/basilisks1.webp"
                 alt="Basilisks image 1"
               />
-              <figcaption class="event-desc__figcaption">Photo caption</figcaption>
+              <figcaption class="event-desc__figcaption">
+                Photo caption
+              </figcaption>
             </figure>
             <figure class="event-desc__figure">
               <img
                 class="event-desc__img"
-                src="./images/basilisks/desktop-xl/basilisks2.webp"
+                src="./src/images/static/basilisks/desktop-xl/basilisks2.webp"
                 alt="Basilisks image 2"
               />
-              <figcaption class="event-desc__figcaption">Photo caption</figcaption>
+              <figcaption class="event-desc__figcaption">
+                Photo caption
+              </figcaption>
             </figure>
           </div>
           <div class="event-desc__text-block">
@@ -315,25 +400,28 @@
               NFTs are digital assets that represent real-world objects
             </h3>
             <p class="event-desc__text event-desc__text-first">
-              Setting up your avatar and personalizing your nickname on Binance is quick and easy.
-              Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and
-              Nickname. For those of you who own NFT assets, you can select the NFT you want to use
-              from your collection as your avatar to personalize your profile. For users who do not
-              own any NFT avatars, check out the NFT avatar collections page to get started.
+              Setting up your avatar and personalizing your nickname on Binance
+              is quick and easy. Users can go to binance.com under Dashboard >
+              Settings > My Profile > Avatar and Nickname. For those of you who
+              own NFT assets, you can select the NFT you want to use from your
+              collection as your avatar to personalize your profile. For users
+              who do not own any NFT avatars, check out the NFT avatar
+              collections page to get started.
             </p>
             <p class="event-desc__text">
-              Alternatively, if you're on nft.binance.com, go to User Center > Settings > Basic >
-              Set Avatar and Nickname, and you'll be redirected to the main site. Binance NFT
-              Creators have the option of setting their Avatars on nft.binance.com. Once you set
-              your new unique nickname, it will be standardized and used across the Binance
-              ecosystem.
+              Alternatively, if you're on nft.binance.com, go to User Center >
+              Settings > Basic > Set Avatar and Nickname, and you'll be
+              redirected to the main site. Binance NFT Creators have the option
+              of setting their Avatars on nft.binance.com. Once you set your new
+              unique nickname, it will be standardized and used across the
+              Binance ecosystem.
             </p>
           </div>
           <div class="event-desc__text-block">
             <h3 class="event-desc__subtitle">NFT Avatar Generators</h3>
             <p class="event-desc__text">
-              You can find a range of NFT marketplaces where you can buy existing NFTs or list your
-              own NFTs for sale.
+              You can find a range of NFT marketplaces where you can buy
+              existing NFTs or list your own NFTs for sale.
             </p>
           </div>
           <div class="event-desc__nav">
@@ -367,23 +455,44 @@
               <h4 id="share-title" class="list-row-wrapper__title">Share:</h4>
               <ul class="list-row" aria-labelledby="share-title">
                 <li class="list-row__item">
-                  <a class="list-row__link-icon" href="#" target="_blank" aria-label="Twitter">
+                  <a
+                    class="list-row__link-icon"
+                    href="#"
+                    target="_blank"
+                    aria-label="Twitter"
+                  >
                     <svg width="16" height="16" aria-hidden="true">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                      <use
+                        href="./src/images/sprite/icons.svg#icon-twitter"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li class="list-row__item">
-                  <a class="list-row__link-icon" href="#" target="_blank" aria-label="Facebook">
+                  <a
+                    class="list-row__link-icon"
+                    href="#"
+                    target="_blank"
+                    aria-label="Facebook"
+                  >
                     <svg width="16" height="16" aria-hidden="true">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                      <use
+                        href="./src/images/sprite/icons.svg#icon-facebook"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li class="list-row__item">
-                  <a class="list-row__link-icon" href="#" target="_blank" aria-label="Instagram">
+                  <a
+                    class="list-row__link-icon"
+                    href="#"
+                    target="_blank"
+                    aria-label="Instagram"
+                  >
                     <svg width="16" height="16" aria-hidden="true">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                      <use
+                        href="./src/images/sprite/icons.svg#icon-instagram"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -400,11 +509,23 @@
       <div class="footer__top">
         <div class="footer__logo-slogan">
           <div class="logo footer__logo">
-            <svg class="logo__icon" width="36" height="40" aria-label="Binabox logo">
-              <use href="./images/icons.svg#icon-logo"></use>
+            <svg
+              class="logo__icon"
+              width="36"
+              height="40"
+              aria-label="Binabox logo"
+            >
+              <use href="./src/images/sprite/icons.svg#icon-logo"></use>
             </svg>
-            <svg class="logo__icon-text-blue" width="135" height="21" aria-label="Binabox logo">
-              <use href="./images/icons.svg#icon-logo-text-blue"></use>
+            <svg
+              class="logo__icon-text-blue"
+              width="135"
+              height="21"
+              aria-label="Binabox logo"
+            >
+              <use
+                href="./src/images/sprite/icons.svg#icon-logo-text-blue"
+              ></use>
             </svg>
           </div>
           <p class="text-small footer__slogan">
@@ -415,16 +536,32 @@
           <div>
             <p id="subscribe-nav" class="footer__title">Subscribe</p>
             <nav class="footer__nav" aria-labelledby="subscribe-nav">
-              <a class="footer__nav-link" href="./index.html" aria-labelledby="footer-home">
+              <a
+                class="footer__nav-link"
+                href="./index.html"
+                aria-labelledby="footer-home"
+              >
                 <span id="footer-home">Home</span>
               </a>
-              <a class="footer__nav-link" href="./blog.html" aria-labelledby="footer-blog">
+              <a
+                class="footer__nav-link"
+                href="./blog.html"
+                aria-labelledby="footer-blog"
+              >
                 <span id="footer-blog">Blog</span>
               </a>
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-catalog">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-catalog"
+              >
                 <span id="footer-catalog">Catalog</span>
               </a>
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-contact">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-contact"
+              >
                 <span id="footer-contact">Contact Us</span>
               </a>
             </nav>
@@ -432,16 +569,32 @@
           <div>
             <p id="company-nav" class="footer__title">Company</p>
             <nav class="footer__nav" aria-labelledby="company-nav">
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-terms">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-terms"
+              >
                 <span id="footer-terms">Terms Conditions</span>
               </a>
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-privacy">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-privacy"
+              >
                 <span id="footer-privacy">Privacy Policy</span>
               </a>
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-whitepaper">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-whitepaper"
+              >
                 <span id="footer-whitepaper">Whitepaper</span>
               </a>
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-help">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-help"
+              >
                 <span id="footer-help">Help Center</span>
               </a>
             </nav>
@@ -454,34 +607,64 @@
           <span class="footer__copyright-span">All</span> rights reserved
         </p>
         <div class="socials">
-          <a class="socials__link" href="#" target="_blank" aria-label="Our Twitter">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our Twitter"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-twitter"></use>
+              <use href="./src/images/sprite/icons.svg#icon-twitter"></use>
             </svg>
           </a>
-          <a class="socials__link" href="#" target="_blank" aria-label="Our Facebook">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our Facebook"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-facebook"></use>
+              <use href="./src/images/sprite/icons.svg#icon-facebook"></use>
             </svg>
           </a>
-          <a class="socials__link" href="#" target="_blank" aria-label="Our Telegram">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our Telegram"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-telegram"></use>
+              <use href="./src/images/sprite/icons.svg#icon-telegram"></use>
             </svg>
           </a>
-          <a class="socials__link" href="#" target="_blank" aria-label="Our YouTube">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our YouTube"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-youtube"></use>
+              <use href="./src/images/sprite/icons.svg#icon-youtube"></use>
             </svg>
           </a>
-          <a class="socials__link" href="#" target="_blank" aria-label="Our TikTok">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our TikTok"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-tiktok"></use>
+              <use href="./src/images/sprite/icons.svg#icon-tiktok"></use>
             </svg>
           </a>
-          <a class="socials__link" href="#" target="_blank" aria-label="Our Discord">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our Discord"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-discord"></use>
+              <use href="./src/images/sprite/icons.svg#icon-discord"></use>
             </svg>
           </a>
         </div>
