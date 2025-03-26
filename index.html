@@ -25,14 +25,14 @@
   <body>
     <!--  HEADER SECTION START -->
     <header class="header">
-      <div class="logo">
+      <a class="logo" href="./index.html" aria-labelledby="nav-home">  
         <svg class="logo__icon" width="36" height="40" alt="Binabox logo">
           <use href="./images/icons.svg#icon-logo"></use>
         </svg>
         <svg class="logo__icon-text-white" width="135" height="21" alt="Binabox logo">
           <use href="./images/icons.svg#icon-logo-text-white"></use>
         </svg>
-      </div>
+      </a>
       <nav class="nav" aria-label="Main navigation">
         <a class="nav__link nav__link--current" href="./index.html" aria-labelledby="nav-home">
           <span id="nav-home">Home</span>
@@ -130,19 +130,15 @@
             <li>
               <button class="button-icon" type="button" aria-labelledby="prev-items">
                 <span id="prev-items" class="visually-hidden">Previous items</span>
-                <svg width="24" height="24" aria-hidden="true">
+                <svg width="16" height="16" aria-hidden="true">
                   <use class="button-icon__icon" href="./images/icons.svg#icon-chevron-left"></use>
                 </svg>
               </button>
             </li>
             <li>
-              <button
-                class="button-icon button-icon--primary"
-                type="button"
-                aria-labelledby="next-items"
-              >
+              <button class="button-icon" type="button" aria-labelledby="next-items">
                 <span id="next-items" class="visually-hidden">Next items</span>
-                <svg width="24" height="24" aria-hidden="true">
+                <svg width="16" height="16" aria-hidden="true">
                   <use class="button-icon__icon" href="./images/icons.svg#icon-chevron-right"></use>
                 </svg>
               </button>
@@ -1035,14 +1031,14 @@
           <details class="faq">
             <summary class="faq__question" aria-labelledby="faq-nft">
               <span id="faq-nft">What are the NFTs?</span>
-              <button class="button-icon-m" type="button" aria-label="Open FAQ">
+              <div class="faq__button button-icon-m" aria-label="Open FAQ">
                 <svg class="faq__icon-plus" width="16" height="17" aria-hidden="true">
                   <use href="./images/icons.svg#icon-plus"></use>
                 </svg>
                 <svg class="faq__icon-minus" width="16" height="17" aria-hidden="true">
                   <use href="./images/icons.svg#icon-minus"></use>
                 </svg>
-              </button>
+              </div>
             </summary>
             <p class="faq__answer">
               Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna
@@ -1052,14 +1048,14 @@
           <details class="faq">
             <summary class="faq__question" aria-labelledby="faq-get">
               <span id="faq-get">How do i get NFTs?</span>
-              <button class="button-icon-m" type="button" aria-label="Open FAQ">
+              <div class="faq__button button-icon-m" aria-label="Open FAQ">
                 <svg class="faq__icon-plus" width="16" height="17" aria-hidden="true">
                   <use href="./images/icons.svg#icon-plus"></use>
                 </svg>
                 <svg class="faq__icon-minus" width="16" height="17" aria-hidden="true">
                   <use href="./images/icons.svg#icon-minus"></use>
                 </svg>
-              </button>
+              </div>
             </summary>
             <p class="faq__answer">
               Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna
@@ -1069,14 +1065,14 @@
           <details class="faq">
             <summary class="faq__question" aria-labelledby="faq-buy">
               <span id="faq-buy">How can we buy your NFTs?</span>
-              <button class="button-icon-m" type="button" aria-label="Open FAQ">
+              <div class="faq__button button-icon-m" aria-label="Open FAQ">
                 <svg class="faq__icon-plus" width="16" height="17" aria-hidden="true">
                   <use href="./images/icons.svg#icon-plus"></use>
                 </svg>
                 <svg class="faq__icon-minus" width="16" height="17" aria-hidden="true">
                   <use href="./images/icons.svg#icon-minus"></use>
                 </svg>
-              </button>
+              </div>
             </summary>
             <p class="faq__answer">
               Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna
@@ -1086,11 +1082,14 @@
           <details class="faq">
             <summary class="faq__question" aria-labelledby="faq-team">
               <span id="faq-team">Who are the team behind the project?</span>
-              <button class="button-icon-m" type="button" aria-label="Open FAQ">
-                <svg width="16" height="17" aria-hidden="true">
+              <div class="faq__button button-icon-m" aria-label="Open FAQ">
+                <svg class="faq__icon-plus" width="16" height="17" aria-hidden="true">
                   <use href="./images/icons.svg#icon-plus"></use>
                 </svg>
-              </button>
+                <svg class="faq__icon-minus" width="16" height="17" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-minus"></use>
+                </svg>
+              </div>
             </summary>
             <p class="faq__answer">
               Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna
@@ -1106,14 +1105,14 @@
     <footer class="footer">
       <div class="footer__top">
         <div class="footer__logo-slogan">
-          <div class="logo footer__logo">
+          <a class="logo footer__logo" href="./index.html" aria-labelledby="nav-home">
             <svg class="logo__icon" width="36" height="40" alt="Binabox logo">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
             <svg class="logo__icon-text-blue" width="135" height="21" alt="Binabox logo">
               <use href="./images/icons.svg#icon-logo-text-blue"></use>
             </svg>
-          </div>
+          </a>
           <p class="text-small footer__slogan">
             We are the best way to check the rarity of NFT<br />collection.
           </p>
