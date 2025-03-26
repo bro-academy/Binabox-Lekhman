@@ -25,11 +25,11 @@
   <body>
     <!--  HEADER SECTION START -->
     <header class="header">
-      <a class="logo" href="./index.html" aria-labelledby="nav-home">  
-        <svg class="logo__icon" width="36" height="40" alt="Binabox logo">
+      <a class="logo" href="./index.html" aria-labelledby="nav-home">
+        <svg class="logo__icon" width="36" height="40" aria-label="Binabox logo">
           <use href="./images/icons.svg#icon-logo"></use>
         </svg>
-        <svg class="logo__icon-text-white" width="135" height="21" alt="Binabox logo">
+        <svg class="logo__icon-text-white" width="135" height="21" aria-label="Binabox logo">
           <use href="./images/icons.svg#icon-logo-text-white"></use>
         </svg>
       </a>
@@ -57,9 +57,11 @@
               placeholder="Search"
               aria-label="Search through site content"
             />
-            <svg class="search__icon" width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-search"></use>
-            </svg>
+            <button class="search__button" type="submit" aria-label="Submit button of search form">
+              <svg class="search__icon" width="24" height="24" aria-hidden="true">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+            </button>
           </form>
         </search>
         <a class="button" href="#" aria-labelledby="discord-btn" target="_blank">
@@ -1109,7 +1111,7 @@
             <svg class="logo__icon" width="36" height="40" alt="Binabox logo">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
-            <svg class="logo__icon-text-blue" width="135" height="21" alt="Binabox logo">
+            <svg class="logo__icon-text-blue" width="135" height="21" aria-label="Binabox logo">
               <use href="./images/icons.svg#icon-logo-text-blue"></use>
             </svg>
           </a>
