@@ -19,22 +19,36 @@
       type="text/css"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
 
   <body>
     <!--  HEADER SECTION START -->
     <header class="header">
       <div class="logo">
-        <svg class="logo__icon" width="36" height="40" aria-label="Binabox logo">
-          <use href="./images/icons.svg#icon-logo"></use>
+        <svg
+          class="logo__icon"
+          width="36"
+          height="40"
+          aria-label="Binabox logo"
+        >
+          <use href="./src/images/sprite/icons.svg#icon-logo"></use>
         </svg>
-        <svg class="logo__icon-text-white" width="135" height="21" aria-label="Binabox logo">
-          <use href="./images/icons.svg#icon-logo-text-white"></use>
+        <svg
+          class="logo__icon-text-white"
+          width="135"
+          height="21"
+          aria-label="Binabox logo"
+        >
+          <use href="./src/images/sprite/icons.svg#icon-logo-text-white"></use>
         </svg>
       </div>
       <nav class="nav" aria-label="Main navigation">
-        <a class="nav__link nav__link--current" href="./index.html" aria-labelledby="nav-home">
+        <a
+          class="nav__link nav__link--current"
+          href="./index.html"
+          aria-labelledby="nav-home"
+        >
           <span id="nav-home">Home</span>
         </a>
         <a class="nav__link" href="./blog.html" aria-labelledby="nav-blog">
@@ -57,22 +71,40 @@
               placeholder="Search"
               aria-label="Search through site content"
             />
-            <button class="search__button" type="submit" aria-label="Submit button of search form">
-              <svg class="search__icon" width="24" height="24" aria-hidden="true">
-                <use href="./images/icons.svg#icon-search"></use>
+            <button
+              class="search__button"
+              type="submit"
+              aria-label="Submit button of search form"
+            >
+              <svg
+                class="search__icon"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <use href="./src/images/sprite/icons.svg#icon-search"></use>
               </svg>
             </button>
           </form>
         </search>
-        <a class="button" href="#" aria-labelledby="discord-btn" target="_blank">
+        <a
+          class="button"
+          href="#"
+          aria-labelledby="discord-btn"
+          target="_blank"
+        >
           <svg width="24" height="24" aria-hidden="true">
-            <use href="./images/icons.svg#icon-discord"></use>
+            <use href="./src/images/sprite/icons.svg#icon-discord"></use>
           </svg>
           <span id="discord-btn">Discord</span>
         </a>
-        <button class="button button--primary" type="button" aria-labelledby="connect-wallet-btn">
+        <button
+          class="button button--primary"
+          type="button"
+          aria-labelledby="connect-wallet-btn"
+        >
           <svg width="24" height="24" aria-hidden="true">
-            <use href="./images/icons.svg#icon-wallet-03"></use>
+            <use href="./src/images/sprite/icons.svg#icon-wallet-03"></use>
           </svg>
           <span id="connect-wallet-btn">Connect</span>
         </button>
@@ -116,7 +148,7 @@
                 <div class="img-wrapper">
                   <img
                     class="event__img"
-                    src="./images/our-blog/event0/face.webp"
+                    src="./src/images/static/our-blog/event0/face.webp"
                     alt="Image-Library-NFT-Picture face"
                   />
                   <span class="img-tag">NFT</span>
@@ -125,15 +157,21 @@
               <div class="event-info">
                 <div class="event-info__name">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-user-02"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-user-02"
+                    ></use>
                   </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-calendar"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-calendar"
+                    ></use>
                   </svg>
-                  <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
+                  <time class="event-info__text" datetime="2022-06-20"
+                    >20 Jun 2022</time
+                  >
                 </div>
               </div>
               <a
@@ -143,10 +181,13 @@
                 target="_blank"
                 aria-labelledby="event-sonic-face"
               >
-                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
+                <h3 class="title event__title" id="event-sonic-face">
+                  Sonic live
+                </h3>
               </a>
               <p class="event__text">
-                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+                nulla imperdiet...
               </p>
               <a
                 class="event__link button event__button"
@@ -157,7 +198,9 @@
               >
                 <span id="read-more-face">Read more</span>
                 <svg width="24" height="24" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                  <use
+                    href="./src/images/sprite/icons.svg#icon-chevron-right"
+                  ></use>
                 </svg>
               </a>
             </article>
@@ -174,7 +217,7 @@
                 <div class="img-wrapper">
                   <img
                     class="event__img"
-                    src="./images/our-blog/event1/scull.webp"
+                    src="./src/images/static/our-blog/event1/scull.webp"
                     alt="Image-Library-NFT-Picture scull"
                   />
                   <span class="img-tag">NFT</span>
@@ -183,15 +226,21 @@
               <div class="event-info">
                 <div class="event-info__name">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-user-02"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-user-02"
+                    ></use>
                   </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-calendar"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-calendar"
+                    ></use>
                   </svg>
-                  <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
+                  <time class="event-info__text" datetime="2022-06-20"
+                    >20 Jun 2022</time
+                  >
                 </div>
               </div>
               <a
@@ -201,10 +250,13 @@
                 target="_blank"
                 aria-labelledby="event-sonic-face"
               >
-                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
+                <h3 class="title event__title" id="event-sonic-face">
+                  Sonic live
+                </h3>
               </a>
               <p class="event__text">
-                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+                nulla imperdiet...
               </p>
               <a
                 class="event__link button event__button"
@@ -215,7 +267,9 @@
               >
                 <span id="read-more-face">Read more</span>
                 <svg width="24" height="24" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                  <use
+                    href="./src/images/sprite/icons.svg#icon-chevron-right"
+                  ></use>
                 </svg>
               </a>
             </article>
@@ -232,7 +286,7 @@
                 <div class="img-wrapper">
                   <img
                     class="event__img"
-                    src="./images/our-blog/event2/cat-blog.webp"
+                    src="./src/images/static/our-blog/event2/cat-blog.webp"
                     alt="Image-Library-NFT-Picture cat-blog"
                   />
                   <span class="img-tag">NFT</span>
@@ -241,15 +295,21 @@
               <div class="event-info">
                 <div class="event-info__name">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-user-02"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-user-02"
+                    ></use>
                   </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-calendar"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-calendar"
+                    ></use>
                   </svg>
-                  <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
+                  <time class="event-info__text" datetime="2022-06-20"
+                    >20 Jun 2022</time
+                  >
                 </div>
               </div>
               <a
@@ -259,10 +319,13 @@
                 target="_blank"
                 aria-labelledby="event-sonic-face"
               >
-                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
+                <h3 class="title event__title" id="event-sonic-face">
+                  Sonic live
+                </h3>
               </a>
               <p class="event__text">
-                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+                nulla imperdiet...
               </p>
               <a
                 class="event__link button event__button"
@@ -273,7 +336,9 @@
               >
                 <span id="read-more-face">Read more</span>
                 <svg width="24" height="24" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                  <use
+                    href="./src/images/sprite/icons.svg#icon-chevron-right"
+                  ></use>
                 </svg>
               </a>
             </article>
@@ -290,7 +355,7 @@
                 <div class="img-wrapper">
                   <img
                     class="event__img"
-                    src="./images/our-blog/event3/monkey.webp"
+                    src="./src/images/static/our-blog/event3/monkey.webp"
                     alt="Image-Library-NFT-Picture monkey"
                   />
                   <span class="img-tag">NFT</span>
@@ -299,15 +364,21 @@
               <div class="event-info">
                 <div class="event-info__name">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-user-02"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-user-02"
+                    ></use>
                   </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-calendar"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-calendar"
+                    ></use>
                   </svg>
-                  <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
+                  <time class="event-info__text" datetime="2022-06-20"
+                    >20 Jun 2022</time
+                  >
                 </div>
               </div>
               <a
@@ -317,10 +388,13 @@
                 target="_blank"
                 aria-labelledby="event-sonic-face"
               >
-                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
+                <h3 class="title event__title" id="event-sonic-face">
+                  Sonic live
+                </h3>
               </a>
               <p class="event__text">
-                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+                nulla imperdiet...
               </p>
               <a
                 class="event__link button event__button"
@@ -331,7 +405,9 @@
               >
                 <span id="read-more-face">Read more</span>
                 <svg width="24" height="24" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                  <use
+                    href="./src/images/sprite/icons.svg#icon-chevron-right"
+                  ></use>
                 </svg>
               </a>
             </article>
@@ -348,7 +424,7 @@
                 <div class="img-wrapper">
                   <img
                     class="event__img"
-                    src="./images/our-blog/event4/duck.webp"
+                    src="./src/images/static/our-blog/event4/duck.webp"
                     alt="Image-Library-NFT-Picture duck"
                   />
                   <span class="img-tag">NFT</span>
@@ -357,15 +433,21 @@
               <div class="event-info">
                 <div class="event-info__name">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-user-02"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-user-02"
+                    ></use>
                   </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-calendar"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-calendar"
+                    ></use>
                   </svg>
-                  <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
+                  <time class="event-info__text" datetime="2022-06-20"
+                    >20 Jun 2022</time
+                  >
                 </div>
               </div>
               <a
@@ -375,10 +457,13 @@
                 target="_blank"
                 aria-labelledby="event-sonic-face"
               >
-                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
+                <h3 class="title event__title" id="event-sonic-face">
+                  Sonic live
+                </h3>
               </a>
               <p class="event__text">
-                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+                nulla imperdiet...
               </p>
               <a
                 class="event__link button event__button"
@@ -389,7 +474,9 @@
               >
                 <span id="read-more-face">Read more</span>
                 <svg width="24" height="24" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                  <use
+                    href="./src/images/sprite/icons.svg#icon-chevron-right"
+                  ></use>
                 </svg>
               </a>
             </article>
@@ -406,7 +493,7 @@
                 <div class="img-wrapper">
                   <img
                     class="event__img"
-                    src="./images/our-blog/event5/gadget-blog.webp"
+                    src="./src/images/static/our-blog/event5/gadget-blog.webp"
                     alt="Image-Library-NFT-Picture gadget-blog"
                   />
                   <span class="img-tag">NFT</span>
@@ -415,15 +502,21 @@
               <div class="event-info">
                 <div class="event-info__name">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-user-02"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-user-02"
+                    ></use>
                   </svg>
                   <p class="event-info__text">Tony Nguyen</p>
                 </div>
                 <div class="event-info__time">
                   <svg width="16" height="16" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-calendar"></use>
+                    <use
+                      href="./src/images/sprite/icons.svg#icon-calendar"
+                    ></use>
                   </svg>
-                  <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
+                  <time class="event-info__text" datetime="2022-06-20"
+                    >20 Jun 2022</time
+                  >
                 </div>
               </div>
               <a
@@ -433,10 +526,13 @@
                 target="_blank"
                 aria-labelledby="event-sonic-face"
               >
-                <h3 class="title event__title" id="event-sonic-face">Sonic live</h3>
+                <h3 class="title event__title" id="event-sonic-face">
+                  Sonic live
+                </h3>
               </a>
               <p class="event__text">
-                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
+                nulla imperdiet...
               </p>
               <a
                 class="event__link button event__button"
@@ -447,7 +543,9 @@
               >
                 <span id="read-more-face">Read more</span>
                 <svg width="24" height="24" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                  <use
+                    href="./src/images/sprite/icons.svg#icon-chevron-right"
+                  ></use>
                 </svg>
               </a>
             </article>
@@ -457,29 +555,51 @@
           <button class="button-icon" type="button" aria-labelledby="prev-page">
             <span id="prev-page" class="visually-hidden">Previous page</span>
             <svg width="24" height="24" aria-hidden="true">
-              <use class="button-icon__icon" href="./images/icons.svg#icon-chevron-left"></use>
+              <use
+                class="button-icon__icon"
+                href="./src/images/sprite/icons.svg#icon-chevron-left"
+              ></use>
             </svg>
           </button>
-          <button class="button-icon pagination__button" type="button" aria-labelledby="page-1">
+          <button
+            class="button-icon pagination__button"
+            type="button"
+            aria-labelledby="page-1"
+          >
             <span id="page-1" class="visually-hidden">page 1</span>
             1
           </button>
-          <button class="button-icon pagination__button" type="button" aria-labelledby="page-2">
+          <button
+            class="button-icon pagination__button"
+            type="button"
+            aria-labelledby="page-2"
+          >
             <span id="page-2" class="visually-hidden">page 2</span>
             2
           </button>
-          <button class="button-icon pagination__button" type="button" aria-labelledby="page-3">
+          <button
+            class="button-icon pagination__button"
+            type="button"
+            aria-labelledby="page-3"
+          >
             <span id="page-3" class="visually-hidden">page 3</span>
             3
           </button>
-          <button class="button-icon pagination__button" type="button" aria-labelledby="more-pages">
+          <button
+            class="button-icon pagination__button"
+            type="button"
+            aria-labelledby="more-pages"
+          >
             <span id="more-pages" class="visually-hidden">More pages</span>
             ...
           </button>
           <button class="button-icon" type="button" aria-labelledby="next-page">
             <span id="next-page" class="visually-hidden">Next page</span>
             <svg width="24" height="24" aria-hidden="true">
-              <use class="button-icon__icon" href="./images/icons.svg#icon-chevron-right"></use>
+              <use
+                class="button-icon__icon"
+                href="./src/images/sprite/icons.svg#icon-chevron-right"
+              ></use>
             </svg>
           </button>
         </section>
@@ -492,11 +612,23 @@
       <div class="footer__top">
         <div class="footer__logo-slogan">
           <div class="logo footer__logo">
-            <svg class="logo__icon" width="36" height="40" aria-label="Binabox logo">
-              <use href="./images/icons.svg#icon-logo"></use>
+            <svg
+              class="logo__icon"
+              width="36"
+              height="40"
+              aria-label="Binabox logo"
+            >
+              <use href="./src/images/sprite/icons.svg#icon-logo"></use>
             </svg>
-            <svg class="logo__icon-text-blue" width="135" height="21" aria-label="Binabox logo">
-              <use href="./images/icons.svg#icon-logo-text-blue"></use>
+            <svg
+              class="logo__icon-text-blue"
+              width="135"
+              height="21"
+              aria-label="Binabox logo"
+            >
+              <use
+                href="./src/images/sprite/icons.svg#icon-logo-text-blue"
+              ></use>
             </svg>
           </div>
           <p class="text-small footer__slogan">
@@ -507,16 +639,32 @@
           <div>
             <p id="subscribe-nav" class="footer__title">Subscribe</p>
             <nav class="footer__nav" aria-labelledby="subscribe-nav">
-              <a class="footer__nav-link" href="./index.html" aria-labelledby="footer-home">
+              <a
+                class="footer__nav-link"
+                href="./index.html"
+                aria-labelledby="footer-home"
+              >
                 <span id="footer-home">Home</span>
               </a>
-              <a class="footer__nav-link" href="./blog.html" aria-labelledby="footer-blog">
+              <a
+                class="footer__nav-link"
+                href="./blog.html"
+                aria-labelledby="footer-blog"
+              >
                 <span id="footer-blog">Blog</span>
               </a>
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-catalog">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-catalog"
+              >
                 <span id="footer-catalog">Catalog</span>
               </a>
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-contact">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-contact"
+              >
                 <span id="footer-contact">Contact Us</span>
               </a>
             </nav>
@@ -524,16 +672,32 @@
           <div>
             <p id="company-nav" class="footer__title">Company</p>
             <nav class="footer__nav" aria-labelledby="company-nav">
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-terms">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-terms"
+              >
                 <span id="footer-terms">Terms Conditions</span>
               </a>
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-privacy">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-privacy"
+              >
                 <span id="footer-privacy">Privacy Policy</span>
               </a>
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-whitepaper">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-whitepaper"
+              >
                 <span id="footer-whitepaper">Whitepaper</span>
               </a>
-              <a class="footer__nav-link" href="#" aria-labelledby="footer-help">
+              <a
+                class="footer__nav-link"
+                href="#"
+                aria-labelledby="footer-help"
+              >
                 <span id="footer-help">Help Center</span>
               </a>
             </nav>
@@ -546,34 +710,64 @@
           <span class="footer__copyright-span">All</span> rights reserved
         </p>
         <div class="socials">
-          <a class="socials__link" href="#" target="_blank" aria-label="Our Twitter">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our Twitter"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-twitter"></use>
+              <use href="./src/images/sprite/icons.svg#icon-twitter"></use>
             </svg>
           </a>
-          <a class="socials__link" href="#" target="_blank" aria-label="Our Facebook">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our Facebook"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-facebook"></use>
+              <use href="./src/images/sprite/icons.svg#icon-facebook"></use>
             </svg>
           </a>
-          <a class="socials__link" href="#" target="_blank" aria-label="Our Telegram">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our Telegram"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-telegram"></use>
+              <use href="./src/images/sprite/icons.svg#icon-telegram"></use>
             </svg>
           </a>
-          <a class="socials__link" href="#" target="_blank" aria-label="Our YouTube">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our YouTube"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-youtube"></use>
+              <use href="./src/images/sprite/icons.svg#icon-youtube"></use>
             </svg>
           </a>
-          <a class="socials__link" href="#" target="_blank" aria-label="Our TikTok">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our TikTok"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-tiktok"></use>
+              <use href="./src/images/sprite/icons.svg#icon-tiktok"></use>
             </svg>
           </a>
-          <a class="socials__link" href="#" target="_blank" aria-label="Our Discord">
+          <a
+            class="socials__link"
+            href="#"
+            target="_blank"
+            aria-label="Our Discord"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#icon-discord"></use>
+              <use href="./src/images/sprite/icons.svg#icon-discord"></use>
             </svg>
           </a>
         </div>
