@@ -1,14 +1,13 @@
 {
   "name": "binabox-build-gulp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "We are the best way to check the rarity of NFT collection",
   "type": "module",
   "scripts": {
     "start": "NODE_ENV=production gulp build",
     "dev": "gulp serve --lint"
   },
-  "author": "",
+  "author": "Serhii Lekhman",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
