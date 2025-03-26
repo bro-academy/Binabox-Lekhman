@@ -395,6 +395,14 @@ button {
   padding: 0;
 }
 
+.search__icon {
+  transition: fill 300ms ease-in-out, filter 300ms ease-in-out;
+}
+
+.search__icon:hover {
+  fill: var(--accent-color);
+  filter: drop-shadow(0 0 20px var(--accent-color));
+}
 
 .header__contacts {
   display: flex;
@@ -846,15 +854,21 @@ button {
 }
 
 .socials__link {
-  transition: transform 300ms ease-in-out;
+  transition: fill 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
 .socials__link:hover,
 .socials__link:focus {
+  fill: var(--accent-color);
   transform: scale(1.3);
   filter: drop-shadow(0 0 10px var(--accent-color));
   outline: none;
 }
+
+.socials__link:active {
+  fill: var(--accent-color-active);
+}
+
 
 /*======<<< FAQs >>>=======*/
 
@@ -971,7 +985,6 @@ button {
   font-size: 12px;
   font-weight: 600;
   line-height: 1.3; /* 133.333% */
-
   transition: color 300ms ease-in-out;
 }
 
@@ -1115,12 +1128,12 @@ button {
   padding: 6px 12px;
 }
 
+
 .list__link {
   color: var(--secondary-text-color);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5; /* 150% */
-
   transition: color 300ms ease-in-out;
 }
 
@@ -1133,6 +1146,11 @@ button {
 .list__link:active {
   color: var(--accent-color-active);
 }
+
+.list__link:active {
+  color: var(--accent-color-active);
+}
+
 
 .tag-list {
   display: flex;
