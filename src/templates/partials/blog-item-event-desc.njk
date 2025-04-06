@@ -1,0 +1,118 @@
+<section class="event-desc">
+  <img class="event-desc__img-main" src="/img/basilisks/desktop-xl/basilisks-2x.webp" alt="The Basilisks NFT"/>
+  <h2 class="title event-desc__title">The Basilisks NFT</h2>
+  <div class="button-accent-l event-desc__category">Gaming</div>
+  <div class="event-info event-desc__info">
+    <div class="event-info__name">
+      <svg width="16" height="16" aria-hidden="true">
+        <use href="/img/icons.svg#icon-user-02"></use>
+      </svg>
+      <p class="event-info__text">Tony Nguyen</p>
+    </div>
+    <div class="event-info__time">
+      <svg width="16" height="16" aria-hidden="true">
+        <use href="/img/icons.svg#icon-calendar"></use>
+      </svg>
+      <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
+    </div>
+  </div>
+  <p class="event-desc__text event-desc__text-main">
+    The Basilisks that
+    <mark class="event-desc__text-highlight">players</mark>
+    collect are represented with NFTs on Ethereum's blockchain with real-world value. Players use the
+    <strong class="event-desc__text-strong">Basilisks they have</strong>
+    gathered to battle other players to win ether (ETH).<br/> In Balthazar Dragons, players are immersed in a 3D open world
+    to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing game
+    developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.
+  </p>
+  <ul class="event-desc__text-list">
+    <li class="event-desc__text">
+      The Basilisks that players collect are represented with NFTs on Ethereum's blockchain with real-world value. Players use
+      the Basilisks they have gathered to battle other players to win ether (ETH).
+    </li>
+    <li class="event-desc__text">
+      In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called
+      Basilisks. Balthazar Dragons is an upcoming fantasy role-playing
+      <strong class="event-desc__text-strong">game developed</strong>
+      on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.
+    </li>
+  </ul>
+  <ul class="event-desc__list">
+    {% for i in event_desc_list %}
+      <li class="event-desc__item">
+        <svg class="event-desc__icon" width="21" height="23" aria-hidden="true">
+          <use href="{{ i.url }}"></use>
+        </svg>
+        <p class="event-desc__text">{{ i.text }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="event-desc__blockquote">
+    <blockquote class="event-desc__subtitle event-desc__blockquote-title">
+      "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers"
+    </blockquote>
+    <div class="event-desc__blockquote-info">
+      <svg class="event-desc__blockquote-icon" width="16" height="17" aria-hidden="true">
+        <use href="/img/icons.svg#icon-stars-02"></use>
+      </svg>
+      <span class="text-small-bold event-desc__blockquote-rate">8.5/10</span>
+      <cite class="text-small-bold event-desc__blockquote-cite">Markout Corporation</cite>
+    </div>
+  </div>
+  <div class="event-desc__imgs">
+    {% for i in event_desc_imgs %}
+      <figure class="event-desc__figure">
+        <img class="event-desc__img" src="{{ i.url }}" alt="{{ i.alt }}"/>
+        <figcaption class="event-desc__figcaption">{{ i.figcaption }}</figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+  <div class="event-desc__text-block">
+    <h3 class="event-desc__subtitle">
+      NFTs are digital assets that represent real-world objects
+    </h3>
+    <p class="event-desc__text event-desc__text-first">
+      Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under
+      Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you
+      want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars,
+      check out the NFT avatar collections page to get started.
+    </p>
+    <p class="event-desc__text">
+      Alternatively, if you're on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you'll
+      be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com. Once
+      you set your new unique nickname, it will be standardized and used across the Binance ecosystem.
+    </p>
+  </div>
+  <div class="event-desc__text-block">
+    <h3 class="event-desc__subtitle">NFT Avatar Generators</h3>
+    <p class="event-desc__text">
+      You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale.
+    </p>
+  </div>
+  <div class="event-desc__nav">
+    <div class="list-row-wrapper">
+      <h4 id="tags-title" class="list-row-wrapper__title">Tags:</h4>
+      <nav class="list-row" aria-labelledby="tags-title">
+        {% for i in event_desc_tags %}
+          <a class="button-s text-small-bold list__link tag-list__link" href="{{ i.url }}" aria-labelledby="{{ i.aria_labelledby }}">
+            <span id="{{ i.aria_labelledby }}">{{ i.text }}</span>
+          </a>
+        {% endfor %}
+      </nav>
+    </div>
+    <div class="list-row-wrapper">
+      <h4 id="share-title" class="list-row-wrapper__title">Share:</h4>
+      <ul class="list-row" aria-labelledby="share-title">
+        {% for i in even_desc_socials %}
+          <li class="list-row__item">
+            <a class="list-row__link-icon" href="{{ i.url }}" target="_blank" aria-label="{{ i.aria_label }}">
+              <svg width="16" height="16" aria-hidden="true">
+                <use href="{{ i.svg }}"></use>
+              </svg>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

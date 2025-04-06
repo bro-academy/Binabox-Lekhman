@@ -1,0 +1,42 @@
+<ul class="events">
+  {% for i in events %}
+    <li class="events-item">
+      <article class="event">
+        <a class="event__link" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-labelledby="{{ i.aria_labelledby }}">
+          <div class="img-wrapper">
+            <img class="event__img" src="{{ i.img }}" alt="{{ i.alt }}"/>
+            <span class="img-tag">{{ i.tag }}</span>
+          </div>
+        </a>
+        <div class="event-info">
+          <div class="event-info__name">
+            <svg width="16" height="16" aria-hidden="true">
+              <use href="{{ i.svg_name }}"></use>
+            </svg>
+            <p class="event-info__text">{{ i.event_info_name }}</p>
+          </div>
+          <div class="event-info__time">
+            <svg width="16" height="16" aria-hidden="true">
+              <use href="{{ i.svg_time }}"></use>
+            </svg>
+            <time class="event-info__text" datetime="{{ i.datetime }}">{{ i.event_info_time }}</time>
+          </div>
+        </div>
+        <a class="event__link" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-labelledby="{{ i.aria_labelledby }}">
+          <h3 class="title event__title" id="{{ i.aria_labelledby }}">
+            {{ i.title_text }}
+          </h3>
+        </a>
+        <p class="event__text">
+          {{ i.text }}
+        </p>
+        <a class="event__link button event__button" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-labelledby="{{ i.btn_aria_labelledby }}">
+          <span id="{{ i.btn_aria_labelledby }}">{{ i.btn_text }}</span>
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="{{ i.btn_svg }}"></use>
+          </svg>
+        </a>
+      </article>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,23 @@
+<section class="faqs section">
+  <h2 class="faqs__title title">FAQs</h2>
+  <div class="faqs__list">
+    {% for i in faqs %}
+      <details class="faq">
+        <summary class="faq__question" aria-labelledby="{{ i.aria_labelledby }}">
+          <span id="{{ i.aria_labelledby }}">{{ i.faq_question }}</span>
+          <div class="faq__button button-icon-m" aria-label="{{ i.aria_label }}">
+            <svg class="faq__icon-plus" width="16" height="17" aria-hidden="true">
+              <use href="{{ i.svg_plus }}"></use>
+            </svg>
+            <svg class="faq__icon-minus" width="16" height="17" aria-hidden="true">
+              <use href="{{ i.svg_minus }}"></use>
+            </svg>
+          </div>
+        </summary>
+        <p class="faq__answer">
+          {{ i.faq_answer }}
+        </p>
+      </details>
+    {% endfor %}
+  </div>
+</section>

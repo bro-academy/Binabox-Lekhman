@@ -1,0 +1,26 @@
+<section class="about-us section">
+  <div class="about-us__info">
+    <h2 class="title about-us__title">About us</h2>
+    <p class="about-us__text">
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum
+      dolore eu fugiat nulla pariatu epteur sint occaecat
+    </p>
+  </div>
+  <ul class="advantages">
+    {% for i in advantages %}
+      <li class="advantage">
+        <svg class="advantage__icon" width="74" height="55" aria-hidden="true">
+          <use href="{{ i.svg }}"></use>
+        </svg>
+        <h3 class="title-small advantage-title">{{ i.title }}</h3>
+        <p class="advantage-desc">
+          {{ i.desc }}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+  <button class="button about-us__button" type="button" aria-labelledby="read-more-about">
+    <span id="read-more-about">Read more</span>
+  </button>
+</section>

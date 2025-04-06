@@ -1,0 +1,22 @@
+<div class="footer__navs">
+  <div>
+    <p id="subscribe-nav" class="footer__title">Subscribe</p>
+    <nav class="footer__nav" aria-labelledby="subscribe-nav">
+      {% for i in footer_subscribe_nav %}
+        <a class="footer__nav-link" href="{{ i.href }}" aria-labelledby="{{ i.aria_labelledby }}">
+          <span id="{{ i.aria_labelledby }}">{{ i.title }}</span>
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+  <div>
+    <p id="company-nav" class="footer__title">Company</p>
+    <nav class="footer__nav" aria-labelledby="company-nav">
+      {% for i in footer_company_nav %}
+        <a class="footer__nav-link" href="{{ i.href }}" aria-labelledby="{{ i.aria_labelledby }}">
+          <span id="{{ i.aria_labelledby }}">{{ i.title }}</span>
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</div>
