@@ -1,0 +1,60 @@
+.about-us__title {
+  margin-bottom: 16px;
+}
+
+.about-us__text {
+  margin-bottom: 40px;
+
+  color: var(--third-text-color);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4; /* 140% */
+}
+
+.advantages {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.advantage {
+  position: relative;
+  padding: 32px;
+  background-color: var(--secondary-bg-color);
+
+  /* background-image: url(https://picsum.photos/200/200);  */
+  transition: background-image 300ms ease-in-out;
+  
+  &:hover,
+  &:focus {
+    outline: none;
+    // background-image: url(/img/icons.svg#icon-hover-1), url(/img/icons.svg#icon-hover-2);
+    background-image: url(/img/icon-hover-1.svg), url(/img/icon-hover-2.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    fill: var(--secondary-bg-color);
+  }
+}
+
+.advantage-title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 24px;
+  padding-top: 31px;
+}
+
+.advantage-desc {
+  color: var(--third-text-color);
+}
+
+.about-us__button {
+  margin-left: auto;
+  margin-right: auto;
+}

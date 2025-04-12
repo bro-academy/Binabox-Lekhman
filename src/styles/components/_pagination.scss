@@ -1,0 +1,15 @@
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  
+  &__button {
+    color: var(--secondary-text-color);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5; /* 155.556% */
+  }
+}
