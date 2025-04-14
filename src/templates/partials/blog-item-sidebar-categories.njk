@@ -1,0 +1,13 @@
+<section class="list-wrapper">
+  <h2 id="categories-title" class="title-small list-wrapper__title">Categories</h2>
+  <ul class="list">
+    {% for i in sidebar_categories %}
+      <li class="list__item">
+        <a class="text-small-bold list__link" href="{{ i.url }}" aria-labelledby="{{ i.aria_labelledby }}">
+          <span id="{{ i.aria_labelledby }}">{{ i.text }}</span>
+          <span class="list__link-data">{{ i.data }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

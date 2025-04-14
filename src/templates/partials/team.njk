@@ -1,0 +1,21 @@
+<section class="team section">
+  <h2 class="team__title title">Our team</h2>
+  <ul class="teammates">
+    {% for i in teammates %}
+      <li class="teammate">
+        <img class="teammate__photo" src="{{ i.img }}" alt="{{ i.alt }}"/>
+        <h3 class="title-small teammate__name">{{ i.name }}</h3>
+        <p class="teammate__position">{{ i.position }}</p>
+        <div class="socials">
+          {% for e in i.socials %}
+            <a class="socials__link" href="{{ e.href }}" target="_blank" aria-label="{{ e.aria_label }}">
+              <svg width="24" height="24" aria-hidden="true">
+                <use href="{{ e.svg }}"></use>
+              </svg>
+            </a>
+          {% endfor %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

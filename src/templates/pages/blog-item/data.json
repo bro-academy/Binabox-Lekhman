@@ -1,0 +1,252 @@
+{
+  "title": "Binabox - Blog item",
+  "path": "./blog-item.html",
+
+  "nav": [
+    {
+      "url": "./index.html",
+      "text": "Home",
+      "aria_labelledby": "nav-home"
+    },
+    {
+      "url": "./blog.html",
+      "text": "Blog",
+      "aria_labelledby": "nav-blog"
+    },
+    {
+      "url": "#",
+      "text": "Catalog",
+      "aria_labelledby": "nav-catalog"
+    },
+    {
+      "url": "#",
+      "text": "Contact Us",
+      "aria_labelledby": "nav-contact"
+    }
+  ],
+
+  "sidebar_categories": [
+    {
+      "url": "#",
+      "aria_labelledby": "cat-blog",
+      "text": "Our blog",
+      "data": "(12)"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "cat-metaverse",
+      "text": "Metaverse",
+      "data": "(24)"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "cat-gaming",
+      "text": "Gaming",
+      "data": "(24)"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "cat-art",
+      "text": "Art",
+      "data": "(24)"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "cat-robot",
+      "text": "Robot",
+      "data": "(24)"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "cat-launchpad",
+      "text": "Launchpad",
+      "data": "(24)"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "cat-crypto",
+      "text": "Crypto",
+      "data": "(430)"
+    }
+  ],
+
+  "sidebar_tags": [
+    {
+      "url": "#",
+      "aria_labelledby": "tag-nft-link",
+      "text": "#NFT"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "tag-ico-link",
+      "text": "#ICO"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "tag-robot-link",
+      "text": "#Robot"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "tag-crypto-link",
+      "text": "#Crypto"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "tag-launchpad-link",
+      "text": "#Launchpad"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "tag-metaverse-link",
+      "text": "#Metaverse"
+    }
+  ],
+
+  "event_desc_list": [
+    {
+      "url": "/img/icons.svg#icon-logo",
+      "text": "List name 1"
+    },
+    {
+      "url": "/img/icons.svg#icon-logo",
+      "text": "List name 2"
+    },
+    {
+      "url": "/img/icons.svg#icon-logo",
+      "text": "List name 3"
+    },
+    {
+      "url": "/img/icons.svg#icon-logo",
+      "text": "List name 4"
+    }
+  ],
+
+  "event_desc_imgs": [
+    {
+      "url": "/img/basilisks/desktop-xl/basilisks1-2x.webp",
+      "alt": "Basilisks image 1",
+      "figcaption": "Photo caption"
+    },
+    {
+      "url": "/img/basilisks/desktop-xl/basilisks2-2x.webp",
+      "alt": "Basilisks image 2",
+      "figcaption": "Photo caption"
+    }
+  ],
+
+  "event_desc_tags": [
+    {
+      "url": "#",
+      "aria_labelledby": "tag-nft",
+      "text": "#NFT"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "tag-ico",
+      "text": "#ICO"
+    },
+    {
+      "url": "#",
+      "aria_labelledby": "tag-crypto",
+      "text": "#Crypto"
+    }
+  ],
+
+  "even_desc_socials": [
+    {
+      "url": "#",
+      "aria_label": "Twitter",
+      "svg": "/img/icons.svg#icon-twitter"
+    },
+    {
+      "url": "#",
+      "aria_label": "Facebook",
+      "svg": "/img/icons.svg#icon-facebook"
+    },
+    {
+      "url": "#",
+      "aria_label": "Instagram",
+      "svg": "/img/icons.svg#icon-instagram"
+    }
+  ],
+
+  "footer_subscribe_nav": [
+    {
+      "href": "./index.html",
+      "aria_labelledby": "footer-home",
+      "title": "Home"
+    },
+    {
+      "href": "./blog.html",
+      "aria_labelledby": "footer-blog",
+      "title": "Blog"
+    },
+    {
+      "href": "#",
+      "aria_labelledby": "footer-catalog",
+      "title": "Catalog"
+    },
+    {
+      "href": "#",
+      "aria_labelledby": "footer-contact",
+      "title": "Contact Us"
+    }
+  ],
+
+  "footer_company_nav": [
+    {
+      "href": "#",
+      "aria_labelledby": "footer-terms",
+      "title": "Terms Conditions"
+    },
+    {
+      "href": "#",
+      "aria_labelledby": "footer-privacy",
+      "title": "Privacy Policy"
+    },
+    {
+      "href": "#",
+      "aria_labelledby": "footer-whitepaper",
+      "title": "Whitepaper"
+    },
+    {
+      "href": "#",
+      "aria_labelledby": "footer-help",
+      "title": "Help Center"
+    }
+  ],
+
+  "footer_socials": [
+    {
+      "href": "#",
+      "aria_label": "Our Twitter",
+      "svg": "/img/icons.svg#icon-twitter"
+    },
+    {
+      "href": "#",
+      "aria_label": "Our Facebook",
+      "svg": "/img/icons.svg#icon-facebook"
+    },
+    {
+      "href": "#",
+      "aria_label": "Our Telegram",
+      "svg": "/img/icons.svg#icon-telegram"
+    },
+    {
+      "href": "#",
+      "aria_label": "Our YouTube",
+      "svg": "/img/icons.svg#icon-youtube"
+    },
+    {
+      "href": "#",
+      "aria_label": "Our TikTok",
+      "svg": "/img/icons.svg#icon-tiktok"
+    },
+    {
+      "href": "#",
+      "aria_label": "Our Discord",
+      "svg": "/img/icons.svg#icon-discord"
+    }
+  ]
+}

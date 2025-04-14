@@ -1,0 +1,18 @@
+<ul class="products">
+  {% for i in products %}
+    <li class="products__item">
+      <a class="products__link" href="{{ i.href }}" title="{{ i.title }}" aria-labelledby="{{ i.aria_labelledby }}">
+        <article class="product">
+          <div class="img-wrapper">
+            <img class="product__img" src="{{ i.img }}" alt="{{ i.alt }}"/>
+            <span class="img-tag {% if i.state === "sold-out" %}img-tag--sold-out{% endif %}">{{ i.tag }}</span>
+          </div>
+          <p class="product__price">{{ i.price }}</p>
+          <h3 class="product__name" id="{{ i.aria_labelledby }}">
+            {{ i.name }}
+          </h3>
+        </article>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
