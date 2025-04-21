@@ -1,3 +1,7 @@
+.faqs__title {
+  margin-bottom: 40px;
+}
+
 .faqs__list {
   display: flex;
   flex-direction: column;
@@ -23,8 +27,7 @@
   letter-spacing: 0;
   transition: letter-spacing 300ms ease-in-out;
 
-  &:hover,
-  &:focus {
+  &:hover {
     outline: none;
     letter-spacing: 3px;
   }
@@ -32,7 +35,7 @@
 
 .faq__button {
   transition: transform 300ms ease-in-out;
-  
+
   &:hover {
     transform: scale(1.7);
   }

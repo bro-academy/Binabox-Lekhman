@@ -1,0 +1,76 @@
+<form class="contact-form" action="url" method="post">
+  <h1 class="title contact-form__title">Get in touch</h1>
+  <p class="text-xl contact-form__subtitle">
+    Browse through the most freuently asked questions
+  </p>
+  <div class="text-small contact-form__item switcher contact-form__switcher">
+    <input class="visually-hidden" id="swc" type="checkbox" name="switcher-checkbox"/>
+    <label class="switcher__label" for="swc">Use my profile information</label>
+  </div>
+  <div class="text-small contact-form__item">
+    <label for="name">Name</label>
+    <input class="contact-form__input" id="name" type="text" name="name" placeholder="Enter your name" required/>
+  </div>
+  <div class="text-small contact-form__item">
+    <label for="last-name">Last Name</label>
+    <input
+      class="contact-form__input"
+      id="last-name"
+      type="text"
+      name="surname"
+      placeholder="Enter your surname"
+      minlength="2"
+      required/>
+  </div>
+  <div class="text-small contact-form__item">
+    <label for="birthday">Date of birth</label>
+    <input class="contact-form__input" type="date" id="birthday" name="birthday"/>
+  </div>
+  <div class="text-small contact-form__radio">
+    <p>Gender</p>
+    <div class="contact-form__radio-item">
+      <input class="custom-radio" type="radio" id="male" value="male" name="gender" checked/>
+      <label for="male">Male</label>
+    </div>
+    <div class="contact-form__radio-item">
+      <input class="custom-radio" type="radio" id="female" value="female" name="gender"/>
+      <label for="female">Female</label>
+    </div>
+  </div>
+  <div class="text-small contact-form__item">
+    <label for="email">Email</label>
+    <input
+      class="contact-form__input"
+      id="email"
+      type="email"
+      name="user-email"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+      required
+      placeholder="Enter your email"/>
+  </div>
+  <div class="text-small contact-form__item">
+    <label for="phone">Phone Number</label>
+    <input class="contact-form__input" type="tel" id="phone" name="user-phone" placeholder="Enter your phone number"/>
+  </div>
+  <div class="text-small contact-form__item">
+    <label for="massage">Message</label>
+    <textarea
+      class="contact-form__input contact-form__textarea"
+      name="welcome"
+      id="massage"
+      cols="30"
+      rows="10"
+      required
+      placeholder="Enter your massage"></textarea>
+  </div>
+  <div class="text-small contact-form__checkbox">
+    <input class="custom-checkbox" type="checkbox" id="chck"/>
+    <label for="chck">
+      By clicking on the 'Send Message' button I agree to
+      <a class="contact-form__link" href="#" id="terms-link" aria-labelledby="terms-link">
+        all the terms of the security policy
+      </a>
+    </label>
+  </div>
+  <button class="button button--primary" type="submit" id="submit-btn" aria-labelledby="submit-btn">Send Message</button>
+</form>

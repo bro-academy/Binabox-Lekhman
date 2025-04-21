@@ -1,0 +1,103 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  padding: 64px 64px 104px;
+  margin: 0 auto;
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 24px;
+  }
+
+  &__input {
+    padding: 10px 12px;
+    color: var(--fourth-text-color);
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    transition: border 300ms ease-in-out;
+  }
+
+  &__input:hover {
+    border: 2px solid var(--accent-color-secondary);
+    cursor: pointer;
+  }
+
+  &__input:focus {
+    outline: none;
+    border: 2px solid var(--accent-color-secondary);
+    cursor: pointer;
+  }
+
+  &__radio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  &__radio-item {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__textarea {
+    resize: none;
+  }
+
+  &__checkbox {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    color: var(--accent-link);
+  }
+}
+
+.contact-form__switcher {
+  background-color: var(--secondary-bg-color);
+  padding: 24px;
+
+  &__label {
+    display: block;
+  }
+}
+
+
+.contact-form input[type="date"] {
+  position: relative;
+}
+
+.contact-form input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
+  color: var(--fourth-text-color);
+  background: transparent;
+}
+
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]):not([type="date"]):valid:not(:placeholder-shown),
+.contact-form textarea:valid:not(:placeholder-shown) {
+  border-color: var(--accent-color-secondary);
+}
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]):invalid:not(:placeholder-shown),
+.contact-form textarea:invalid:not(:placeholder-shown) {
+  border-color: var(--warning-color);
+}
+

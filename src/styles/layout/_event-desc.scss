@@ -89,7 +89,7 @@
 
   &__blockquote-info {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 8px;
   }
 
@@ -165,7 +165,7 @@
   border: 2px solid var(--border-color);
 
   transition: background-color 300ms ease-in-out;
-  
+
   &:hover,
   &:focus {
     outline: none;

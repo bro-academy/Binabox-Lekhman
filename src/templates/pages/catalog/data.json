@@ -1,0 +1,337 @@
+{
+  "title": "Binabox - Catalog",
+  "path": "./catalog.html",
+  "search_placeholder": "Search NFT",
+
+  "filters_section": [
+    {
+      "aria_labelledby": "filters-clothing",
+      "title": "Clothing",
+      "svg_plus": "/img/icons.svg#icon-plus",
+      "svg_minus": "/img/icons.svg#icon-minus",
+      "filters_list": [
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-combatant",
+          "parameter": "Combatant"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-ninja",
+          "parameter": "Ninja"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-king",
+          "parameter": "King"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-queen",
+          "parameter": "Queen"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-robot",
+          "parameter": "Robot"
+        }
+      ]
+    },
+    {
+      "aria_labelledby": "filters-eyes",
+      "title": "Eyes",
+      "svg_plus": "/img/icons.svg#icon-plus",
+      "svg_minus": "/img/icons.svg#icon-minus",
+      "filters_list": [
+        {
+          "type": "radio",
+          "filter_for": "filters-input-eyes-yellow",
+          "parameter": "Yellow",
+          "value": "eyes-yellow",
+          "name": "eyes"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-eyes-green",
+          "parameter": "Green",
+          "value": "eyes-green",
+          "name": "eyes"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-eyes-mix",
+          "parameter": "Mix",
+          "checked": "checked",
+          "value": "eyes-mix",
+          "name": "eyes"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-eyes-orange",
+          "parameter": "Orange",
+          "value": "eyes-orange",
+          "name": "eyes"
+        }
+      ]
+    },
+    {
+      "aria_labelledby": "filters-face",
+      "title": "Face",
+      "svg_plus": "/img/icons.svg#icon-plus",
+      "svg_minus": "/img/icons.svg#icon-minus",
+      "filters_list": [
+        {
+          "type": "radio",
+          "filter_for": "filters-input-face-yellow",
+          "parameter": "Yellow",
+          "value": "face-yellow",
+          "name": "face"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-face-green",
+          "parameter": "Green",
+          "value": "face-green",
+          "name": "face"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-face-mix",
+          "parameter": "Mix",
+          "checked": "checked",
+          "value": "face-mix",
+          "name": "face"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-face-orange",
+          "parameter": "Orange",
+          "value": "face-orange",
+          "name": "face"
+        }
+      ]
+    },
+    {
+      "aria_labelledby": "filters-skin",
+      "title": "Skin",
+      "svg_plus": "/img/icons.svg#icon-plus",
+      "svg_minus": "/img/icons.svg#icon-minus",
+      "filters_list": [
+        {
+          "type": "radio",
+          "filter_for": "filters-input-skin-yellow",
+          "parameter": "Yellow",
+          "value": "skin-yellow",
+          "name": "skin"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-skin-green",
+          "parameter": "Green",
+          "value": "skin-green",
+          "name": "skin"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-skin-mix",
+          "parameter": "Mix",
+          "checked": "checked",
+          "value": "skin-mix",
+          "name": "skin"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-skin-orange",
+          "parameter": "Orange",
+          "value": "skin-orange",
+          "name": "skin"
+        }
+      ]
+    },
+    {
+      "aria_labelledby": "filters-background",
+      "title": "Background",
+      "svg_plus": "/img/icons.svg#icon-plus",
+      "svg_minus": "/img/icons.svg#icon-minus",
+      "filters_list": [
+        {
+          "type": "radio",
+          "filter_for": "filters-input-background-yellow",
+          "parameter": "Yellow",
+          "value": "background-yellow",
+          "name": "background"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-background-green",
+          "parameter": "Green",
+          "value": "background-green",
+          "name": "background"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-background-mix",
+          "parameter": "Mix",
+          "checked": "checked",
+          "value": "background-mix",
+          "name": "background"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-background-orange",
+          "parameter": "Orange",
+          "value": "background-orange",
+          "name": "background"
+        }
+      ]
+    },
+    {
+      "aria_labelledby": "filters-special",
+      "title": "Special",
+      "svg_plus": "/img/icons.svg#icon-plus",
+      "svg_minus": "/img/icons.svg#icon-minus",
+      "filters_list": [
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-special-yellow",
+          "parameter": "Yellow"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-special-green",
+          "parameter": "Green"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-special-mix",
+          "parameter": "Mix"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-special-orange",
+          "parameter": "Orange"
+        }
+      ]
+    }
+  ],
+
+  "purport_tags_management": [
+    {
+      "aria_labelledby": "tag-m-nft",
+      "text": "#NFT",
+      "svg": "/img/icons.svg#x-close"
+    },
+    {
+      "aria_labelledby": "tag-m-ico",
+      "text": "#ICO",
+      "svg": "/img/icons.svg#x-close"
+    },
+    {
+      "aria_labelledby": "tag-m-crypto",
+      "text": "#Crypto",
+      "svg": "/img/icons.svg#x-close"
+    }
+  ],
+
+  "purport_products": [
+    {
+      "href": "#",
+      "title": "Link to our product Skeleton",
+      "aria_labelledby": "product-skeleton",
+      "img": "/img/catalog/product0/skeleton-2x.webp",
+      "alt": "Image-Library-NFT-Picture skeleton",
+      "tag": "New",
+      "state": "new",
+      "price": "$199",
+      "name": "Skeleton"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Cat",
+      "aria_labelledby": "product-cat",
+      "img": "/img/catalog/product1/cat-2x.webp",
+      "alt": "Image-Library-NFT-Picture cat",
+      "tag": "Popular",
+      "state": "popular",
+      "price": "$299",
+      "name": "Cat"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Scissors",
+      "aria_labelledby": "product-scissors",
+      "img": "/img/catalog/product2/scissors-2x.webp",
+      "alt": "Image-Library-NFT-Picture scissors",
+      "tag": "Sold out",
+      "state": "sold-out",
+      "price": "$399",
+      "name": "Scissors"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Book",
+      "aria_labelledby": "product-book",
+      "img": "/img/catalog/product3/book-2x.webp",
+      "alt": "Image-Library-NFT-Picture book",
+      "tag": "New",
+      "state": "new",
+      "price": "$499",
+      "name": "Book"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Gadget",
+      "aria_labelledby": "product-gadget",
+      "img": "/img/catalog/product4/gadget-2x.webp",
+      "alt": "Image-Library-NFT-Picture gadget",
+      "tag": "New",
+      "state": "new",
+      "price": "$599",
+      "name": "Gadget"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Skeleton",
+      "aria_labelledby": "product-skeleton",
+      "img": "/img/catalog/product0/skeleton-2x.webp",
+      "alt": "Image-Library-NFT-Picture skeleton",
+      "tag": "New",
+      "state": "new",
+      "price": "$199",
+      "name": "Skeleton"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Cat",
+      "aria_labelledby": "product-cat",
+      "img": "/img/catalog/product1/cat-2x.webp",
+      "alt": "Image-Library-NFT-Picture cat",
+      "tag": "Popular",
+      "state": "popular",
+      "price": "$299",
+      "name": "Cat"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Scissors",
+      "aria_labelledby": "product-scissors",
+      "img": "/img/catalog/product2/scissors-2x.webp",
+      "alt": "Image-Library-NFT-Picture scissors",
+      "tag": "Sold out",
+      "state": "sold-out",
+      "price": "$399",
+      "name": "Scissors"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Book",
+      "aria_labelledby": "product-book",
+      "img": "/img/catalog/product3/book-2x.webp",
+      "alt": "Image-Library-NFT-Picture book",
+      "tag": "New",
+      "state": "new",
+      "price": "$499",
+      "name": "Book"
+    }
+  ]
+}

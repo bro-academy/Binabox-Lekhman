@@ -1,0 +1,59 @@
+<div class="purport">
+  <div class="purport__header">
+    <h2 class="purport__title">All item</h2>
+    <div class="purport__search-block">
+      <select class="purport__select">
+        <option value="" disabled selected>Sort by</option>
+        <option value="newest">Newest</option>
+        <option value="most-popular">Most popular</option>
+        <option value="increasing-in-price">Increasing in price</option>
+        <option value="lowering-the-price">Lowering the price</option>
+      </select>
+      {% include "partials/search.njk" %}
+    </div>
+  </div>
+  <div class="purport__tags-management">
+    <ul class="purport__tags-list">
+      {% for i in purport_tags_management %}
+        <li class="button-s text-small-bold tag-list__link" aria-labelledby="{{ i.aria_labelledby }}">
+          <span id="{{ i.aria_labelledby }}">{{ i.text }}</span>
+          <svg class="purport__tags-icon" width="16" height="16" aria-hidden="true">
+            <use href="{{ i.svg }}"></use>
+          </svg>
+        </li>
+      {% endfor %}
+    </ul>
+    <button class="button button--light-s" type="button" aria-labelledby="btn-clear">
+      <span id="btn-clear">Clear all</span>
+    </button>
+  </div>
+  <ul class="purport__products">
+    {% for i in purport_products %}
+      <li class="products__item purport__item">
+        <a class="products__link" href="{{ i.href }}" title="{{ i.title }}" aria-labelledby="{{ i.aria_labelledby }}">
+          <article class="product">
+            <div class="img-wrapper">
+              <img class="product__img" src="{{ i.img }}" alt="{{ i.alt }}"/>
+              <span class="img-tag{% if i.state === "sold-out" %} img-tag--sold-out{% endif %}">{{ i.tag }}</span>
+            </div>
+            <p class="product__price">{{ i.price }}</p>
+            <h3 class="text-xl" id="{{ i.aria_labelledby }}">
+              {{ i.name }}
+            </h3>
+          </article>
+        </a>
+        <div class="purport__overlay">
+          <button class="button button--light-l purport__overlay-button" type="button" aria-labelledby="favourites-btn">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="/img/icons.svg#heart"></use>
+            </svg>
+            <span id="favourites-btn">Favourites</span>
+          </button>
+          <button class="button button--primary purport__overlay-button" type="button" aria-labelledby="buy-btn">
+            <span id="buy-btn">Buy</span>
+          </button>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
