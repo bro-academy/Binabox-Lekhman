@@ -1,0 +1,50 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0 194px;
+  background-color: var(--secondary-bg-color);
+  background-image: url(/img/bcg-image/desktop-xl/bcg-img-2x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.breadcrumbs__nav {
+  display: flex;
+  gap: 8px;
+}
+
+.breadcrumbs__link {
+  position: relative;
+  transition: color 300ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: var(--accent-color-hover-focus-border);
+  }
+
+  &:active {
+    color: var(--accent-color-active);
+  }
+}
+
+.breadcrumbs__link--disabled {
+  color: var(--fourth-text-color);
+  
+  &:hover,
+  &:focus {
+    color: var(--fourth-text-color);
+  }
+}
+
+.breadcrumbs__link:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 24px;
+  background-color: var(--border-color);
+}

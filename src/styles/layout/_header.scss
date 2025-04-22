@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 32px;
+  background: var(--bg-color);
+
+  &__search {
+    position: relative;
+    margin-right: 18px;
+  }
+
+  &__search::after {
+    content: '';
+    position: absolute;
+    right: -19px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 24px;
+    border-radius: 2px;
+    background: var(--border-color);
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
