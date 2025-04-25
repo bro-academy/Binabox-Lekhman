@@ -1,0 +1,216 @@
+{
+  "search_placeholder": "Search",
+
+  "nav": [
+    {
+      "url": "./index.html",
+      "text": "Home",
+      "aria_labelledby": "nav-home"
+    },
+    {
+      "url": "./blog.html",
+      "text": "Blog",
+      "aria_labelledby": "nav-blog"
+    },
+    {
+      "url": "./catalog.html",
+      "text": "Catalog",
+      "aria_labelledby": "nav-catalog"
+    },
+    {
+      "url": "./contact-us.html",
+      "text": "Contact Us",
+      "aria_labelledby": "nav-contact"
+    }
+  ],
+
+  "events": [
+    {
+      "href": "./blog-item.html",
+      "title": "Event Sonic live",
+      "aria_labelledby": "event-sonic-face",
+      "img": "/img/our-blog/event0/face-2x.webp",
+      "alt": "Image-Library-NFT-Picture face",
+      "tag": "NFT",
+      "svg_name": "/img/icons.svg#icon-user-02",
+      "event_info_name": "Tony Nguyen",
+      "svg_time": "/img/icons.svg#icon-calendar",
+      "datetime": "2022-06-20",
+      "event_info_time": "20 Jun 2022",
+      "title_text": "Sonic live Face",
+      "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btn_aria_labelledby": "read-more-face",
+      "btn_text": "Read more",
+      "btn_svg": "/img/icons.svg#icon-chevron-right"
+    },
+    {
+      "href": "#",
+      "title": "Event Sonic live",
+      "aria_labelledby": "event-sonic-scull",
+      "img": "/img/our-blog/event1/scull-2x.webp",
+      "alt": "Image-Library-NFT-Picture scull",
+      "tag": "NFT",
+      "svg_name": "/img/icons.svg#icon-user-02",
+      "event_info_name": "Tony Nguyen",
+      "svg_time": "/img/icons.svg#icon-calendar",
+      "datetime": "2022-06-20",
+      "event_info_time": "20 Jun 2022",
+      "title_text": "Sonic live Scull",
+      "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btn_aria_labelledby": "read-more-scull",
+      "btn_text": "Read more",
+      "btn_svg": "/img/icons.svg#icon-chevron-right"
+    },
+    {
+      "href": "#",
+      "title": "Event Sonic live",
+      "aria_labelledby": "event-sonic-cat-blog",
+      "img": "/img/our-blog/event2/cat-blog-2x.webp",
+      "alt": "Image-Library-NFT-Picture cat-blog",
+      "tag": "NFT",
+      "svg_name": "/img/icons.svg#icon-user-02",
+      "event_info_name": "Tony Nguyen",
+      "svg_time": "/img/icons.svg#icon-calendar",
+      "datetime": "2022-06-20",
+      "event_info_time": "20 Jun 2022",
+      "title_text": "Sonic live Cat",
+      "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btn_aria_labelledby": "read-more-cat-blog",
+      "btn_text": "Read more",
+      "btn_svg": "/img/icons.svg#icon-chevron-right"
+    },
+    {
+      "href": "#",
+      "title": "Event Sonic live",
+      "aria_labelledby": "event-sonic-monkey",
+      "img": "/img/our-blog/event3/monkey-2x.webp",
+      "alt": "Image-Library-NFT-Picture monkey",
+      "tag": "NFT",
+      "svg_name": "/img/icons.svg#icon-user-02",
+      "event_info_name": "Tony Nguyen",
+      "svg_time": "/img/icons.svg#icon-calendar",
+      "datetime": "2022-06-20",
+      "event_info_time": "20 Jun 2022",
+      "title_text": "Sonic live Monkey",
+      "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btn_aria_labelledby": "read-more-monkey",
+      "btn_text": "Read more",
+      "btn_svg": "/img/icons.svg#icon-chevron-right"
+    },
+    {
+      "href": "#",
+      "title": "Event Sonic live",
+      "aria_labelledby": "event-sonic-duck",
+      "img": "/img/our-blog/event4/duck-2x.webp",
+      "alt": "Image-Library-NFT-Picture duck",
+      "tag": "NFT",
+      "svg_name": "/img/icons.svg#icon-user-02",
+      "event_info_name": "Tony Nguyen",
+      "svg_time": "/img/icons.svg#icon-calendar",
+      "datetime": "2022-06-20",
+      "event_info_time": "20 Jun 2022",
+      "title_text": "Sonic live Duck",
+      "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btn_aria_labelledby": "read-more-duck",
+      "btn_text": "Read more",
+      "btn_svg": "/img/icons.svg#icon-chevron-right"
+    },
+    {
+      "href": "#",
+      "title": "Event Sonic live",
+      "aria_labelledby": "event-sonic-gadget-blog",
+      "img": "/img/our-blog/event5/gadget-blog-2x.webp",
+      "alt": "Image-Library-NFT-Picture gadget-blog",
+      "tag": "NFT",
+      "svg_name": "/img/icons.svg#icon-user-02",
+      "event_info_name": "Tony Nguyen",
+      "svg_time": "/img/icons.svg#icon-calendar",
+      "datetime": "2022-06-20",
+      "event_info_time": "20 Jun 2022",
+      "title_text": "Sonic live Gadget",
+      "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btn_aria_labelledby": "read-more-gadget-blog",
+      "btn_text": "Read more",
+      "btn_svg": "/img/icons.svg#icon-chevron-right"
+    }
+  ],
+
+  "footer_subscribe_nav": [
+    {
+      "href": "./index.html",
+      "aria_labelledby": "footer-home",
+      "title": "Home"
+    },
+    {
+      "href": "./blog.html",
+      "aria_labelledby": "footer-blog",
+      "title": "Blog"
+    },
+    {
+      "href": "./catalog.html",
+      "aria_labelledby": "footer-catalog",
+      "title": "Catalog"
+    },
+    {
+      "href": "./contact-us.html",
+      "aria_labelledby": "footer-contact",
+      "title": "Contact Us"
+    }
+  ],
+
+  "footer_company_nav": [
+    {
+      "href": "#",
+      "aria_labelledby": "footer-terms",
+      "title": "Terms Conditions"
+    },
+    {
+      "href": "#",
+      "aria_labelledby": "footer-privacy",
+      "title": "Privacy Policy"
+    },
+    {
+      "href": "#",
+      "aria_labelledby": "footer-whitepaper",
+      "title": "Whitepaper"
+    },
+    {
+      "href": "#",
+      "aria_labelledby": "footer-help",
+      "title": "Help Center"
+    }
+  ],
+
+  "footer_socials": [
+    {
+      "href": "#",
+      "aria_label": "Our Twitter",
+      "svg": "/img/icons.svg#icon-twitter"
+    },
+    {
+      "href": "#",
+      "aria_label": "Our Facebook",
+      "svg": "/img/icons.svg#icon-facebook"
+    },
+    {
+      "href": "#",
+      "aria_label": "Our Telegram",
+      "svg": "/img/icons.svg#icon-telegram"
+    },
+    {
+      "href": "#",
+      "aria_label": "Our YouTube",
+      "svg": "/img/icons.svg#icon-youtube"
+    },
+    {
+      "href": "#",
+      "aria_label": "Our TikTok",
+      "svg": "/img/icons.svg#icon-tiktok"
+    },
+    {
+      "href": "#",
+      "aria_label": "Our Discord",
+      "svg": "/img/icons.svg#icon-discord"
+    }
+  ]
+}

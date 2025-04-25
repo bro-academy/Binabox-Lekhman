@@ -9,6 +9,9 @@
 @use "../components/search";
 @use "../components/socials";
 @use "../components/pagination";
+@use "../components/switcher";
+@use "../components/custom-radio";
+@use "../components/custom-checkbox";
 
 @use "../layout/header";
 @use "../layout/hero";
@@ -22,3 +25,7 @@
 @use "../layout/breadcrumbs";
 @use "../layout/blog-item-sidebar";
 @use "../layout/event-desc";
+@use "../layout/our-contacts";
+@use "../layout/contact-form";
+@use "../layout/catalog-sidebar";
+@use "../layout/purport";

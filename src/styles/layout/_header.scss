@@ -6,15 +6,19 @@
   padding: 32px;
   background: var(--bg-color);
 
-  &__search {
-    position: relative;
-    margin-right: 18px;
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
-
-  &__search::after {
+  &__button-before {
+    position: relative;
+    margin-left: 18px;
+  }
+  &__button-before::before {
     content: '';
     position: absolute;
-    right: -19px;
+    left: -19px;
     top: 50%;
     transform: translateY(-50%);
     width: 2px;
@@ -22,10 +26,5 @@
     border-radius: 2px;
     background: var(--border-color);
   }
-
-  &__contacts {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
 }
+

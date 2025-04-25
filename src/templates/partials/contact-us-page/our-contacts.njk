@@ -1,0 +1,16 @@
+<section class="our-contacts">
+  <h2 class="visually-hidden" aria-label="Our Contacts">Our Contacts</h2>
+  <ul class="our-contacts__list">
+    {% for i in our_contacts %}
+      <li class="our-contacts__item">
+        <svg class="our-contacts__icon" width="56" height="56" aria-hidden="true">
+          <use href="{{ i.svg }}"></use>
+        </svg>
+        <h3 class="title">{{ i.title }}</h3>
+        <p class="our-contacts__text" aria-label="{{ i.aria_label }}">
+          {{ i.text }}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
