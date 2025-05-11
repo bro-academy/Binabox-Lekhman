@@ -1,9 +1,20 @@
+@use "../base/mixins" as *;
+
 .our-contacts {
-  padding: 64px 64px 0;
+  padding-inline: 16px;
+
+  @include mq(tablet) {
+    padding: 32px 24px 0;
+  }
+
+  @include mq(laptop) {
+    padding: 64px 64px 0;
+  }
 
   &__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px ;
   }
 
@@ -11,11 +22,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 24px;
     min-width: 288px;
     max-width: 328px;
-    padding: 40px 32px;
     border: 2px solid var(--secondary-bg-color);
     transition: all 300ms ease-in-out;
+
+    @include mq(tablet) {
+      padding: 40px 32px;
+    }
   }
 
   &__item:hover {
@@ -24,7 +39,11 @@
   }
 
   &__icon {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+
+    @include mq(tablet) {
+      margin-bottom: 24px;
+    }
   }
 
   &__text {
