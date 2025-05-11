@@ -7,8 +7,8 @@
     {
       "aria_labelledby": "filters-clothing",
       "title": "Clothing",
-      "svg_plus": "/img/icons.svg#icon-plus",
-      "svg_minus": "/img/icons.svg#icon-minus",
+      "svg_plus": "/img/sprite.svg#icon-plus",
+      "svg_minus": "/img/sprite.svg#icon-minus",
       "filters_list": [
         {
           "type": "checkbox",
@@ -40,8 +40,8 @@
     {
       "aria_labelledby": "filters-eyes",
       "title": "Eyes",
-      "svg_plus": "/img/icons.svg#icon-plus",
-      "svg_minus": "/img/icons.svg#icon-minus",
+      "svg_plus": "/img/sprite.svg#icon-plus",
+      "svg_minus": "/img/sprite.svg#icon-minus",
       "filters_list": [
         {
           "type": "radio",
@@ -77,8 +77,8 @@
     {
       "aria_labelledby": "filters-face",
       "title": "Face",
-      "svg_plus": "/img/icons.svg#icon-plus",
-      "svg_minus": "/img/icons.svg#icon-minus",
+      "svg_plus": "/img/sprite.svg#icon-plus",
+      "svg_minus": "/img/sprite.svg#icon-minus",
       "filters_list": [
         {
           "type": "radio",
@@ -114,8 +114,8 @@
     {
       "aria_labelledby": "filters-skin",
       "title": "Skin",
-      "svg_plus": "/img/icons.svg#icon-plus",
-      "svg_minus": "/img/icons.svg#icon-minus",
+      "svg_plus": "/img/sprite.svg#icon-plus",
+      "svg_minus": "/img/sprite.svg#icon-minus",
       "filters_list": [
         {
           "type": "radio",
@@ -151,8 +151,8 @@
     {
       "aria_labelledby": "filters-background",
       "title": "Background",
-      "svg_plus": "/img/icons.svg#icon-plus",
-      "svg_minus": "/img/icons.svg#icon-minus",
+      "svg_plus": "/img/sprite.svg#icon-plus",
+      "svg_minus": "/img/sprite.svg#icon-minus",
       "filters_list": [
         {
           "type": "radio",
@@ -188,8 +188,8 @@
     {
       "aria_labelledby": "filters-special",
       "title": "Special",
-      "svg_plus": "/img/icons.svg#icon-plus",
-      "svg_minus": "/img/icons.svg#icon-minus",
+      "svg_plus": "/img/sprite.svg#icon-plus",
+      "svg_minus": "/img/sprite.svg#icon-minus",
       "filters_list": [
         {
           "type": "checkbox",
@@ -219,17 +219,17 @@
     {
       "aria_labelledby": "tag-m-nft",
       "text": "#NFT",
-      "svg": "/img/icons.svg#x-close"
+      "svg": "/img/sprite.svg#x-close"
     },
     {
       "aria_labelledby": "tag-m-ico",
       "text": "#ICO",
-      "svg": "/img/icons.svg#x-close"
+      "svg": "/img/sprite.svg#x-close"
     },
     {
       "aria_labelledby": "tag-m-crypto",
       "text": "#Crypto",
-      "svg": "/img/icons.svg#x-close"
+      "svg": "/img/sprite.svg#x-close"
     }
   ],
 

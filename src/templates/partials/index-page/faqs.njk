@@ -1,4 +1,4 @@
-<section class="faqs section">
+<section class="faqs">
   <h2 class="faqs__title title">FAQs</h2>
   <div class="faqs__list">
     {% for i in faqs %}
@@ -7,10 +7,10 @@
           <span id="{{ i.aria_labelledby }}">{{ i.faq_question }}</span>
           <div class="faq__button button-icon-m" aria-label="{{ i.aria_label }}">
             <svg class="faq__icon-plus" width="16" height="17" aria-hidden="true">
-              <use href="{{ i.svg_plus }}"></use>
+              <use href="/img/sprite.svg#icon-plus"></use>
             </svg>
             <svg class="faq__icon-minus" width="16" height="17" aria-hidden="true">
-              <use href="{{ i.svg_minus }}"></use>
+              <use href="/img/sprite.svg#icon-minus"></use>
             </svg>
           </div>
         </summary>

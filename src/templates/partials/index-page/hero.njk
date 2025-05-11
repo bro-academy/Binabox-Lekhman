@@ -1,9 +1,12 @@
 <section class="hero">
   <div class="hero__content">
     <h1 class="title-xl hero__title">
-      with
-      <span class="hero__title--highlight">binabox</span>
-      explore<br/>NFT collection
+      <span class="hero__title-no-wrap">
+        with
+        <span class="hero__title--highlight">binabox</span>
+        explore
+      </span><br />
+      NFT collection
     </h1>
     <p class="hero__slogan">
       We are the best way to check the rarity of NFT collection
@@ -11,7 +14,7 @@
     <div class="hero__stats">
       {% for i in hero_stats %}
         <div class="hero__stat-item">
-          <p class="hero__stat-number">{{ i.number }}</p>
+          <p class="title-xl hero__stat-number">{{ i.number }}</p>
           <p class="hero__stat-text">{{ i.text }}</p>
         </div>
       {% endfor %}

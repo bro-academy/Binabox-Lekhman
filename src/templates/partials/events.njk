@@ -1,10 +1,15 @@
-<ul class="events">
-  {% for i in events %}
-    <li class="events-item">
-      <article class="event">
-        <a class="event__link" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-labelledby="{{ i.aria_labelledby }}">
-          <div class="img-wrapper">
-            <img class="event__img" src="{{ i.img }}" alt="{{ i.alt }}"/>
+<div class="events-wrapper">
+  <ul class="events">
+    {% for i in events %}
+      <li class="events-item event">
+        <a class="event__link event__link-img" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-labelledby="{{ i.aria_labelledby }}">
+          <div class="img-wrapper event__img-wrapper">
+            <picture>
+              <source srcset="{{ i.img_desktop_1x }} 1x, {{ i.img_desktop_2x }} 2x" media="(min-width:1728px)" type="image/webp"/>
+              <source srcset="{{ i.img_laptop_1x }} 1x, {{ i.img_laptop_2x }} 2x" media="(min-width:1280px)" type="image/webp"/>
+              <source srcset="{{ i.img_mobile_1x }} 1x, {{ i.img_mobile_2x }} 2x" media="(max-width:1280px)" type="image/webp"/>
+              <img class="event__img" src="{{ i.img }}" alt="{{ i.alt }}" width="290" height="290" loading="lazy"/>
+            </picture>
             <span class="img-tag">{{ i.tag }}</span>
           </div>
         </a>
@@ -36,7 +41,7 @@
             <use href="{{ i.btn_svg }}"></use>
           </svg>
         </a>
-      </article>
-    </li>
-  {% endfor %}
-</ul>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

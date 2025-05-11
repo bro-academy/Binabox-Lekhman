@@ -82,19 +82,19 @@
 
   "event_desc_list": [
     {
-      "url": "/img/icons.svg#icon-logo",
+      "url": "/img/sprite.svg#icon-logo",
       "text": "List name 1"
     },
     {
-      "url": "/img/icons.svg#icon-logo",
+      "url": "/img/sprite.svg#icon-logo",
       "text": "List name 2"
     },
     {
-      "url": "/img/icons.svg#icon-logo",
+      "url": "/img/sprite.svg#icon-logo",
       "text": "List name 3"
     },
     {
-      "url": "/img/icons.svg#icon-logo",
+      "url": "/img/sprite.svg#icon-logo",
       "text": "List name 4"
     }
   ],
@@ -134,17 +134,17 @@
     {
       "url": "#",
       "aria_label": "Twitter",
-      "svg": "/img/icons.svg#icon-twitter"
+      "svg": "/img/sprite.svg#icon-twitter"
     },
     {
       "url": "#",
       "aria_label": "Facebook",
-      "svg": "/img/icons.svg#icon-facebook"
+      "svg": "/img/sprite.svg#icon-facebook"
     },
     {
       "url": "#",
       "aria_label": "Instagram",
-      "svg": "/img/icons.svg#icon-instagram"
+      "svg": "/img/sprite.svg#icon-instagram"
     }
   ]
 }

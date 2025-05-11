@@ -29,109 +29,145 @@
       "href": "./blog-item.html",
       "title": "Event Sonic live",
       "aria_labelledby": "event-sonic-face",
-      "img": "/img/our-blog/event0/face-2x.webp",
+      "img": "../src/images/static/our-blog/event0/face-mobile.jpg",
+      "img_mobile_1x": "/img/our-blog/event0/face-mobile-1x.webp",
+      "img_mobile_2x": "/img/our-blog/event0/face-mobile-2x.webp",
+      "img_laptop_1x": "/img/our-blog/event0/face-laptop-1x.webp",
+      "img_laptop_2x": "/img/our-blog/event0/face-laptop-2x.webp",
+      "img_desktop_1x": "/img/our-blog/event0/face-desktop-1x.webp",
+      "img_desktop_2x": "/img/our-blog/event0/face-desktop-2x.webp",
       "alt": "Image-Library-NFT-Picture face",
       "tag": "NFT",
-      "svg_name": "/img/icons.svg#icon-user-02",
+      "svg_name": "/img/sprite.svg#icon-user-02",
       "event_info_name": "Tony Nguyen",
-      "svg_time": "/img/icons.svg#icon-calendar",
+      "svg_time": "/img/sprite.svg#icon-calendar",
       "datetime": "2022-06-20",
       "event_info_time": "20 Jun 2022",
       "title_text": "Sonic live Face",
       "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
       "btn_aria_labelledby": "read-more-face",
       "btn_text": "Read more",
-      "btn_svg": "/img/icons.svg#icon-chevron-right"
+      "btn_svg": "/img/sprite.svg#icon-chevron-right"
     },
     {
       "href": "#",
       "title": "Event Sonic live",
       "aria_labelledby": "event-sonic-scull",
-      "img": "/img/our-blog/event1/scull-2x.webp",
+      "img": "../src/images/static/our-blog/event1/scull-mobile.jpg",
+      "img_mobile_1x": "/img/our-blog/event1/scull-mobile-1x.webp",
+      "img_mobile_2x": "/img/our-blog/event1/scull-mobile-2x.webp",
+      "img_laptop_1x": "/img/our-blog/event1/scull-laptop-1x.webp",
+      "img_laptop_2x": "/img/our-blog/event1/scull-laptop-2x.webp",
+      "img_desktop_1x": "/img/our-blog/event1/scull-desktop-1x.webp",
+      "img_desktop_2x": "/img/our-blog/event1/scull-desktop-2x.webp",
       "alt": "Image-Library-NFT-Picture scull",
       "tag": "NFT",
-      "svg_name": "/img/icons.svg#icon-user-02",
+      "svg_name": "/img/sprite.svg#icon-user-02",
       "event_info_name": "Tony Nguyen",
-      "svg_time": "/img/icons.svg#icon-calendar",
+      "svg_time": "/img/sprite.svg#icon-calendar",
       "datetime": "2022-06-20",
       "event_info_time": "20 Jun 2022",
       "title_text": "Sonic live Scull",
       "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
       "btn_aria_labelledby": "read-more-scull",
       "btn_text": "Read more",
-      "btn_svg": "/img/icons.svg#icon-chevron-right"
+      "btn_svg": "/img/sprite.svg#icon-chevron-right"
     },
     {
       "href": "#",
       "title": "Event Sonic live",
       "aria_labelledby": "event-sonic-cat-blog",
-      "img": "/img/our-blog/event2/cat-blog-2x.webp",
+      "img": "../src/images/static/our-blog/event2/cat-mobile.jpg",
+      "img_mobile_1x": "/img/our-blog/event2/cat-mobile-1x.webp",
+      "img_mobile_2x": "/img/our-blog/event2/cat-mobile-2x.webp",
+      "img_laptop_1x": "/img/our-blog/event2/cat-laptop-1x.webp",
+      "img_laptop_2x": "/img/our-blog/event2/cat-laptop-2x.webp",
+      "img_desktop_1x": "/img/our-blog/event2/cat-desktop-1x.webp",
+      "img_desktop_2x": "/img/our-blog/event2/cat-desktop-2x.webp",
       "alt": "Image-Library-NFT-Picture cat-blog",
       "tag": "NFT",
-      "svg_name": "/img/icons.svg#icon-user-02",
+      "svg_name": "/img/sprite.svg#icon-user-02",
       "event_info_name": "Tony Nguyen",
-      "svg_time": "/img/icons.svg#icon-calendar",
+      "svg_time": "/img/sprite.svg#icon-calendar",
       "datetime": "2022-06-20",
       "event_info_time": "20 Jun 2022",
       "title_text": "Sonic live Cat",
       "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
       "btn_aria_labelledby": "read-more-cat-blog",
       "btn_text": "Read more",
-      "btn_svg": "/img/icons.svg#icon-chevron-right"
+      "btn_svg": "/img/sprite.svg#icon-chevron-right"
     },
     {
       "href": "#",
       "title": "Event Sonic live",
       "aria_labelledby": "event-sonic-monkey",
-      "img": "/img/our-blog/event3/monkey-2x.webp",
+      "img": "../src/images/static/our-blog/event3/monkey-mobile.jpg",
+      "img_mobile_1x": "/img/our-blog/event3/monkey-mobile-1x.webp",
+      "img_mobile_2x": "/img/our-blog/event3/monkey-mobile-2x.webp",
+      "img_laptop_1x": "/img/our-blog/event3/monkey-laptop-1x.webp",
+      "img_laptop_2x": "/img/our-blog/event3/monkey-laptop-2x.webp",
+      "img_desktop_1x": "/img/our-blog/event3/monkey-desktop-1x.webp",
+      "img_desktop_2x": "/img/our-blog/event3/monkey-desktop-2x.webp",
       "alt": "Image-Library-NFT-Picture monkey",
       "tag": "NFT",
-      "svg_name": "/img/icons.svg#icon-user-02",
+      "svg_name": "/img/sprite.svg#icon-user-02",
       "event_info_name": "Tony Nguyen",
-      "svg_time": "/img/icons.svg#icon-calendar",
+      "svg_time": "/img/sprite.svg#icon-calendar",
       "datetime": "2022-06-20",
       "event_info_time": "20 Jun 2022",
       "title_text": "Sonic live Monkey",
       "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
       "btn_aria_labelledby": "read-more-monkey",
       "btn_text": "Read more",
-      "btn_svg": "/img/icons.svg#icon-chevron-right"
+      "btn_svg": "/img/sprite.svg#icon-chevron-right"
     },
     {
       "href": "#",
       "title": "Event Sonic live",
       "aria_labelledby": "event-sonic-duck",
-      "img": "/img/our-blog/event4/duck-2x.webp",
+      "img": "../src/images/static/our-blog/event4/duck-mobile.jpg",
+      "img_mobile_1x": "/img/our-blog/event4/duck-mobile-1x.webp",
+      "img_mobile_2x": "/img/our-blog/event4/duck-mobile-2x.webp",
+      "img_laptop_1x": "/img/our-blog/event4/duck-laptop-1x.webp",
+      "img_laptop_2x": "/img/our-blog/event4/duck-laptop-2x.webp",
+      "img_desktop_1x": "/img/our-blog/event4/duck-desktop-1x.webp",
+      "img_desktop_2x": "/img/our-blog/event4/duck-desktop-2x.webp",
       "alt": "Image-Library-NFT-Picture duck",
       "tag": "NFT",
-      "svg_name": "/img/icons.svg#icon-user-02",
+      "svg_name": "/img/sprite.svg#icon-user-02",
       "event_info_name": "Tony Nguyen",
-      "svg_time": "/img/icons.svg#icon-calendar",
+      "svg_time": "/img/sprite.svg#icon-calendar",
       "datetime": "2022-06-20",
       "event_info_time": "20 Jun 2022",
       "title_text": "Sonic live Duck",
       "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
       "btn_aria_labelledby": "read-more-duck",
       "btn_text": "Read more",
-      "btn_svg": "/img/icons.svg#icon-chevron-right"
+      "btn_svg": "/img/sprite.svg#icon-chevron-right"
     },
     {
       "href": "#",
       "title": "Event Sonic live",
       "aria_labelledby": "event-sonic-gadget-blog",
-      "img": "/img/our-blog/event5/gadget-blog-2x.webp",
+      "img": "../src/images/static/our-blog/event5/gadget-mobile.jpg",
+      "img_mobile_1x": "/img/our-blog/event5/gadget-mobile-1x.webp",
+      "img_mobile_2x": "/img/our-blog/event5/gadget-mobile-2x.webp",
+      "img_laptop_1x": "/img/our-blog/event5/gadget-laptop-1x.webp",
+      "img_laptop_2x": "/img/our-blog/event5/gadget-laptop-2x.webp",
+      "img_desktop_1x": "/img/our-blog/event5/gadget-desktop-1x.webp",
+      "img_desktop_2x": "/img/our-blog/event5/gadget-desktop-2x.webp",
       "alt": "Image-Library-NFT-Picture gadget-blog",
       "tag": "NFT",
-      "svg_name": "/img/icons.svg#icon-user-02",
+      "svg_name": "/img/sprite.svg#icon-user-02",
       "event_info_name": "Tony Nguyen",
-      "svg_time": "/img/icons.svg#icon-calendar",
+      "svg_time": "/img/sprite.svg#icon-calendar",
       "datetime": "2022-06-20",
       "event_info_time": "20 Jun 2022",
       "title_text": "Sonic live Gadget",
       "event_text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
       "btn_aria_labelledby": "read-more-gadget-blog",
       "btn_text": "Read more",
-      "btn_svg": "/img/icons.svg#icon-chevron-right"
+      "btn_svg": "/img/sprite.svg#icon-chevron-right"
     }
   ],
 
@@ -185,32 +221,32 @@
     {
       "href": "#",
       "aria_label": "Our Twitter",
-      "svg": "/img/icons.svg#icon-twitter"
+      "svg": "/img/sprite.svg#icon-twitter"
     },
     {
       "href": "#",
       "aria_label": "Our Facebook",
-      "svg": "/img/icons.svg#icon-facebook"
+      "svg": "/img/sprite.svg#icon-facebook"
     },
     {
       "href": "#",
       "aria_label": "Our Telegram",
-      "svg": "/img/icons.svg#icon-telegram"
+      "svg": "/img/sprite.svg#icon-telegram"
     },
     {
       "href": "#",
       "aria_label": "Our YouTube",
-      "svg": "/img/icons.svg#icon-youtube"
+      "svg": "/img/sprite.svg#icon-youtube"
     },
     {
       "href": "#",
       "aria_label": "Our TikTok",
-      "svg": "/img/icons.svg#icon-tiktok"
+      "svg": "/img/sprite.svg#icon-tiktok"
     },
     {
       "href": "#",
       "aria_label": "Our Discord",
-      "svg": "/img/icons.svg#icon-discord"
+      "svg": "/img/sprite.svg#icon-discord"
     }
   ]
 }

@@ -1,4 +1,5 @@
 @use "../base/reset";
+@use "../base/mixins";
 @use "../base/global";
 @use "../base/vars";
 
@@ -12,6 +13,7 @@
 @use "../components/switcher";
 @use "../components/custom-radio";
 @use "../components/custom-checkbox";
+@use "../components/burger";
 
 @use "../layout/header";
 @use "../layout/hero";

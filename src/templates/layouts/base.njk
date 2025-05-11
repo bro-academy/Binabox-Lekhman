@@ -19,5 +19,44 @@
     {% include "partials/header/header.njk" %}
     {% block content %}default content{% endblock %}
     {% include "partials/footer/footer.njk" %}
+    <script>
+      window.addEventListener("load", (event) => {
+        const burgerOpener = document.querySelector(".js-burger");
+        const filterOpener = document.querySelector(".js-filter");
+        burgerOpener.addEventListener("click", () => {
+          document
+            .body
+            .classList
+            .remove("filter--active");
+          document
+            .body
+            .classList
+            .toggle("side-menu--active");
+            burgerOpener.classList.toggle("is-active");
+        });
+        filterOpener.addEventListener("click", () => {
+          document
+            .body
+            .classList
+            .remove("side-menu--active");
+            burgerOpener.classList.remove("is-active");
+          document
+            .body
+            .classList
+            .toggle("filter--active");
+        });
+        window.addEventListener("resize", () => {
+          document
+            .body
+            .classList
+            .remove("side-menu--active");
+            burgerOpener.classList.remove("is-active");
+          document
+            .body
+            .classList
+            .remove("filter--active");
+        });
+      });
+    </script>
   </body>
 </html>

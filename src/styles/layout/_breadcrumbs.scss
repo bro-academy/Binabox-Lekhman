@@ -7,6 +7,10 @@
   background-image: url(/img/bcg-image/desktop-xl/bcg-img-2x.webp);
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__title {
+    margin-bottom: 20px;
+  }
 }
 
 .breadcrumbs__nav {

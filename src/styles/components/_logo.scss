@@ -1,8 +1,16 @@
+@use "../base/mixins" as *;
+
 .logo {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 18px;
+  flex-grow: 1;
+}
+
+.logo__icon-text-white {
+  @include mq(mobile-only) {
+    @include visually-hidden
+  }
 }
 
 .logo__icon {

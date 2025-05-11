@@ -1,5 +1,15 @@
-.search__form {
-  position: relative;
+@use "../base/mixins" as *;
+
+.search {
+  @include mq(mobile-tablet-only) {
+    order: -1;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  &__form {
+    position: relative;
+  }
 }
 
 .search__input {
@@ -10,6 +20,10 @@
   background-color: transparent;
   color: var(--fourth-text-color);
   transition: border 300ms ease-in-out;
+
+  @include mq(mobile-tablet-only) {
+    width: 100%;
+  }
 
   &::placeholder {
     letter-spacing: 0;
@@ -42,10 +56,5 @@
 }
 
 .search__icon {
-  transition: fill 300ms ease-in-out, filter 300ms ease-in-out;
-
-  &:hover {
-    fill: var(--accent-color);
-    filter: drop-shadow(0 0 20px var(--accent-color));
-  }
+  fill: var(--secondary-text-color);
 }

@@ -1,29 +1,50 @@
+@use "../base/mixins" as *;
+
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
-  padding: 32px;
+  padding: 16px;
   background: var(--bg-color);
+
+  @include mq(tablet) {
+    padding: 32px;
+  }
 
   &__contacts {
     display: flex;
     align-items: center;
     gap: 16px;
   }
+
+  &__contacts-connect {
+    @include mq(mobile-only) {
+      @include visually-hidden
+    }
+  }
+
+  &__contacts-discord {
+    @include mq(mobile-tablet-only) {
+      @include visually-hidden
+    }
+  }
+
   &__button-before {
     position: relative;
-    margin-left: 18px;
+    margin-left: 34px;
   }
+
   &__button-before::before {
-    content: '';
-    position: absolute;
-    left: -19px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 2px;
-    height: 24px;
-    border-radius: 2px;
-    background: var(--border-color);
+    @include mq(laptop) {
+      content: '';
+      position: absolute;
+      left: -19px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2px;
+      height: 24px;
+      border-radius: 2px;
+      background: var(--border-color);
+    }
   }
 }
