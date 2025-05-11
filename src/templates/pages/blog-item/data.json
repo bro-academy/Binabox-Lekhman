@@ -101,12 +101,16 @@
 
   "event_desc_imgs": [
     {
-      "url": "/img/basilisks/desktop-xl/basilisks1-2x.webp",
+      "img": "../src/images/static/basilisks/basilisks1.jpg",
+      "img_1x": "/img/basilisks/basilisks1-1x.webp",
+      "img_2x": "/img/basilisks/basilisks1-2x.webp",
       "alt": "Basilisks image 1",
       "figcaption": "Photo caption"
     },
     {
-      "url": "/img/basilisks/desktop-xl/basilisks2-2x.webp",
+      "img": "../src/images/static/basilisks/basilisks2.jpg",
+      "img_1x": "/img/basilisks/basilisks2-1x.webp",
+      "img_2x": "/img/basilisks/basilisks2-2x.webp",
       "alt": "Basilisks image 2",
       "figcaption": "Photo caption"
     }

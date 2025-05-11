@@ -1,12 +1,44 @@
+@use "../base/mixins" as *;
+
 .breadcrumbs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 0 194px;
+  padding: 24px 0 90px;
   background-color: var(--secondary-bg-color);
-  background-image: url(/img/bcg-image/desktop-xl/bcg-img-2x.webp);
+  background-image: url(/img/bcg-image/mobile-1x.webp);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include mq(retina) {
+    background-image: url(/img/bcg-image/mobile-2x.webp);
+  }
+
+  @include mq(tablet) {
+    background-image: url(/img/bcg-image/tablet-1x.webp);
+    padding-bottom: 84px;
+
+    @include mq(retina) {
+      background-image: url(/img/bcg-image/tablet-2x.webp);
+    }
+  }
+
+  @include mq(laptop) {
+    background-image: url(/img/bcg-image/laptop-1x.webp);
+    padding: 64px 0 198px;
+
+    @include mq(retina) {
+      background-image: url(/img/bcg-image/laptop-2x.webp);
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: url(/img/bcg-image/desktop-1x.webp);
+
+    @include mq(retina) {
+      background-image: url(/img/bcg-image/desktop-2x.webp);
+    }
+  }
 
   &__title {
     margin-bottom: 20px;
@@ -15,6 +47,7 @@
 
 .breadcrumbs__nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 

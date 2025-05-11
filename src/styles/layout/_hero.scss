@@ -33,13 +33,12 @@
       height: 640px;
 
       background-image: url(/img/hero/cube-1x.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
 
       @include mq(retina) {
         background-image: url(/img/hero/cube-2x.webp);
       }
-
-      background-repeat: no-repeat;
-      background-size: cover;
     }
   }
 
