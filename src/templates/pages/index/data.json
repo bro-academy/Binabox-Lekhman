@@ -17,12 +17,12 @@
     {
       "aria_labelledby": "prev-items",
       "text": "Previous items",
-      "href": "/img/icons.svg#icon-chevron-left"
+      "href": "/img/sprite.svg#icon-chevron-left"
     },
     {
       "aria_labelledby": "next-items",
       "text": "Next items",
-      "href": "/img/icons.svg#icon-chevron-right"
+      "href": "/img/sprite.svg#icon-chevron-right"
     }
   ],
 
@@ -31,7 +31,9 @@
       "href": "#",
       "title": "Link to our product Skeleton",
       "aria_labelledby": "product-skeleton",
-      "img": "/img/catalog/product0/skeleton-2x.webp",
+      "img": "../src/images/static/catalog/skeleton.jpg",
+      "img_1x": "/img/catalog/skeleton-1x.webp",
+      "img_2x": "/img/catalog/skeleton-2x.webp",
       "alt": "Image-Library-NFT-Picture skeleton",
       "tag": "New",
       "state": "new",
@@ -42,7 +44,9 @@
       "href": "#",
       "title": "Link to our product Cat",
       "aria_labelledby": "product-cat",
-      "img": "/img/catalog/product1/cat-2x.webp",
+      "img": "../src/images/static/catalog/cat.jpg",
+      "img_1x": "/img/catalog/cat-1x.webp",
+      "img_2x": "/img/catalog/cat-2x.webp",
       "alt": "Image-Library-NFT-Picture cat",
       "tag": "New",
       "state": "new",
@@ -53,7 +57,9 @@
       "href": "#",
       "title": "Link to our product Scissors",
       "aria_labelledby": "product-scissors",
-      "img": "/img/catalog/product2/scissors-2x.webp",
+      "img": "../src/images/static/catalog/scissors.jpg",
+      "img_1x": "/img/catalog/scissors-1x.webp",
+      "img_2x": "/img/catalog/scissors-2x.webp",
       "alt": "Image-Library-NFT-Picture scissors",
       "tag": "Sold out",
       "state": "sold-out",
@@ -64,7 +70,9 @@
       "href": "#",
       "title": "Link to our product Book",
       "aria_labelledby": "product-book",
-      "img": "/img/catalog/product3/book-2x.webp",
+      "img": "../src/images/static/catalog/book.jpg",
+      "img_1x": "/img/catalog/book-1x.webp",
+      "img_2x": "/img/catalog/book-2x.webp",
       "alt": "Image-Library-NFT-Picture book",
       "tag": "New",
       "state": "new",
@@ -75,7 +83,9 @@
       "href": "#",
       "title": "Link to our product Gadget",
       "aria_labelledby": "product-gadget",
-      "img": "/img/catalog/product4/gadget-2x.webp",
+      "img": "../src/images/static/catalog/gadget.jpg",
+      "img_1x": "/img/catalog/gadget-1x.webp",
+      "img_2x": "/img/catalog/gadget-2x.webp",
       "alt": "Image-Library-NFT-Picture gadget",
       "tag": "New",
       "state": "new",
@@ -86,22 +96,22 @@
 
   "advantages": [
     {
-      "svg": "/img/icons.svg#icon-about-01",
+      "svg": "/img/sprite.svg#icon-about-01",
       "title": "High quality",
       "desc": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
     },
     {
-      "svg": "/img/icons.svg#icon-about-02",
+      "svg": "/img/sprite.svg#icon-about-02",
       "title": "Big collection",
       "desc": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
     },
     {
-      "svg": "/img/icons.svg#icon-about-03",
+      "svg": "/img/sprite.svg#icon-about-03",
       "title": "Top Resourse",
       "desc": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
     },
     {
-      "svg": "/img/icons.svg#icon-about-04",
+      "svg": "/img/sprite.svg#icon-about-04",
       "title": "Big community",
       "desc": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
     }
@@ -109,7 +119,9 @@
 
   "teammates": [
     {
-      "img": "/img/team/teammate0/teammate0-2x.webp",
+      "img": "../src/images/static/team/teammate0.jpg",
+      "img_1x": "/img/team/teammate0-1x.webp",
+      "img_2x": "/img/team/teammate0-2x.webp",
       "alt": "Photo of a team member John Galt",
       "name": "John Galt",
       "position": "СЕО",
@@ -117,47 +129,49 @@
         {
           "href": "#",
           "aria_label": "John Galt Twitter",
-          "svg": "/img/icons.svg#icon-twitter"
+          "svg": "/img/sprite.svg#icon-twitter"
         },
         {
           "href": "#",
           "aria_label": "John Galt Facebook",
-          "svg": "/img/icons.svg#icon-facebook"
+          "svg": "/img/sprite.svg#icon-facebook"
         },
         {
           "href": "#",
           "aria_label": "John Galt Telegram",
-          "svg": "/img/icons.svg#icon-telegram"
+          "svg": "/img/sprite.svg#icon-telegram"
         },
         {
           "href": "#",
           "aria_label": "John Galt LinkedIn",
-          "svg": "/img/icons.svg#icon-linkedin"
+          "svg": "/img/sprite.svg#icon-linkedin"
         },
         {
           "href": "#",
           "aria_label": "John Galt Instagram",
-          "svg": "/img/icons.svg#icon-instagram"
+          "svg": "/img/sprite.svg#icon-instagram"
         },
         {
           "href": "#",
           "aria_label": "John Galt YouTube",
-          "svg": "/img/icons.svg#icon-youtube"
+          "svg": "/img/sprite.svg#icon-youtube"
         },
         {
           "href": "#",
           "aria_label": "John Galt TikTok",
-          "svg": "/img/icons.svg#icon-tiktok"
+          "svg": "/img/sprite.svg#icon-tiktok"
         },
         {
           "href": "#",
           "aria_label": "John Galt Discord",
-          "svg": "/img/icons.svg#icon-discord"
+          "svg": "/img/sprite.svg#icon-discord"
         }
       ]
     },
     {
-      "img": "/img/team/teammate1/teammate1-2x.webp",
+      "img": "../src/images/static/team/teammate1.jpg",
+      "img_1x": "/img/team/teammate1-1x.webp",
+      "img_2x": "/img/team/teammate1-2x.webp",
       "alt": "Photo of a team member Dagny Taggart",
       "name": "Dagny Taggart",
       "position": "Co - Founder",
@@ -165,42 +179,44 @@
         {
           "href": "#",
           "aria_label": "Dagny Taggart Twitter",
-          "svg": "/img/icons.svg#icon-twitter"
+          "svg": "/img/sprite.svg#icon-twitter"
         },
         {
           "href": "#",
           "aria_label": "Dagny Taggart Facebook",
-          "svg": "/img/icons.svg#icon-facebook"
+          "svg": "/img/sprite.svg#icon-facebook"
         },
         {
           "href": "#",
           "aria_label": "Dagny Taggart Telegram",
-          "svg": "/img/icons.svg#icon-telegram"
+          "svg": "/img/sprite.svg#icon-telegram"
         },
         {
           "href": "#",
           "aria_label": "Dagny Taggart LinkedIn",
-          "svg": "/img/icons.svg#icon-linkedin"
+          "svg": "/img/sprite.svg#icon-linkedin"
         },
         {
           "href": "#",
           "aria_label": "Dagny Taggart Instagram",
-          "svg": "/img/icons.svg#icon-instagram"
+          "svg": "/img/sprite.svg#icon-instagram"
         },
         {
           "href": "#",
           "aria_label": "Dagny Taggart YouTube",
-          "svg": "/img/icons.svg#icon-youtube"
+          "svg": "/img/sprite.svg#icon-youtube"
         },
         {
           "href": "#",
           "aria_label": "Dagny Taggart TikTok",
-          "svg": "/img/icons.svg#icon-tiktok"
+          "svg": "/img/sprite.svg#icon-tiktok"
         }
       ]
     },
     {
-      "img": "/img/team/teammate2/teammate2-2x.webp",
+      "img": "../src/images/static/team/teammate2.jpg",
+      "img_1x": "/img/team/teammate2-1x.webp",
+      "img_2x": "/img/team/teammate2-2x.webp",
       "alt": "Photo of a team member Henry 'Hank' Rearden",
       "name": "Henry 'Hank' Rearden",
       "position": "Senior Full Stack Developer (Node.js & React)",
@@ -208,37 +224,39 @@
         {
           "href": "#",
           "aria_label": "Henry 'Hank' Rearden Twitter",
-          "svg": "/img/icons.svg#icon-twitter"
+          "svg": "/img/sprite.svg#icon-twitter"
         },
         {
           "href": "#",
           "aria_label": "Henry 'Hank' Rearden Facebook",
-          "svg": "/img/icons.svg#icon-facebook"
+          "svg": "/img/sprite.svg#icon-facebook"
         },
         {
           "href": "#",
           "aria_label": "Henry 'Hank' Rearden Telegram",
-          "svg": "/img/icons.svg#icon-telegram"
+          "svg": "/img/sprite.svg#icon-telegram"
         },
         {
           "href": "#",
           "aria_label": "Henry 'Hank' Rearden LinkedIn",
-          "svg": "/img/icons.svg#icon-linkedin"
+          "svg": "/img/sprite.svg#icon-linkedin"
         },
         {
           "href": "#",
           "aria_label": "Henry 'Hank' Rearden Instagram",
-          "svg": "/img/icons.svg#icon-instagram"
+          "svg": "/img/sprite.svg#icon-instagram"
         },
         {
           "href": "#",
           "aria_label": "Henry 'Hank' Rearden YouTube",
-          "svg": "/img/icons.svg#icon-youtube"
+          "svg": "/img/sprite.svg#icon-youtube"
         }
       ]
     },
     {
-      "img": "/img/team/teammate3/teammate3-2x.webp",
+      "img": "../src/images/static/team/teammate3.jpg",
+      "img_1x": "/img/team/teammate3-1x.webp",
+      "img_2x": "/img/team/teammate3-2x.webp",
       "alt": "Photo of a team member Howard Roark",
       "name": "Howard Roark",
       "position": "Team Lead Back-end Developer (Node.js)",
@@ -246,32 +264,34 @@
         {
           "href": "#",
           "aria_label": "Howard Roark Twitter",
-          "svg": "/img/icons.svg#icon-twitter"
+          "svg": "/img/sprite.svg#icon-twitter"
         },
         {
           "href": "#",
           "aria_label": "Howard Roark Facebook",
-          "svg": "/img/icons.svg#icon-facebook"
+          "svg": "/img/sprite.svg#icon-facebook"
         },
         {
           "href": "#",
           "aria_label": "Howard Roark Telegram",
-          "svg": "/img/icons.svg#icon-telegram"
+          "svg": "/img/sprite.svg#icon-telegram"
         },
         {
           "href": "#",
           "aria_label": "Howard Roark LinkedIn",
-          "svg": "/img/icons.svg#icon-linkedin"
+          "svg": "/img/sprite.svg#icon-linkedin"
         },
         {
           "href": "#",
           "aria_label": "Howard Roark Instagram",
-          "svg": "/img/icons.svg#icon-instagram"
+          "svg": "/img/sprite.svg#icon-instagram"
         }
       ]
     },
     {
-      "img": "/img/team/teammate4/teammate4-2x.webp",
+      "img": "../src/images/static/team/teammate4.jpg",
+      "img_1x": "/img/team/teammate4-1x.webp",
+      "img_2x": "/img/team/teammate4-2x.webp",
       "alt": "Photo of a team member Dominique Francon",
       "name": "Dominique Francon",
       "position": "Art Director (Graph Design)",
@@ -279,27 +299,29 @@
         {
           "href": "#",
           "aria_label": "Dominique Francon Twitter",
-          "svg": "/img/icons.svg#icon-twitter"
+          "svg": "/img/sprite.svg#icon-twitter"
         },
         {
           "href": "#",
           "aria_label": "Dominique Francon Facebook",
-          "svg": "/img/icons.svg#icon-facebook"
+          "svg": "/img/sprite.svg#icon-facebook"
         },
         {
           "href": "#",
           "aria_label": "Dominique Francon Telegram",
-          "svg": "/img/icons.svg#icon-telegram"
+          "svg": "/img/sprite.svg#icon-telegram"
         },
         {
           "href": "#",
           "aria_label": "Dominique Francon LinkedIn",
-          "svg": "/img/icons.svg#icon-linkedin"
+          "svg": "/img/sprite.svg#icon-linkedin"
         }
       ]
     },
     {
-      "img": "/img/team/teammate5/teammate5-2x.webp",
+      "img": "../src/images/static/team/teammate5.jpg",
+      "img_1x": "/img/team/teammate5-1x.webp",
+      "img_2x": "/img/team/teammate5-2x.webp",
       "alt": "Photo of a team member Laura Bradford",
       "name": "Laura Bradford",
       "position": "Human Resources Business Partner",
@@ -307,22 +329,24 @@
         {
           "href": "#",
           "aria_label": "Laura Bradford Twitter",
-          "svg": "/img/icons.svg#icon-twitter"
+          "svg": "/img/sprite.svg#icon-twitter"
         },
         {
           "href": "#",
           "aria_label": "Laura Bradford Facebook",
-          "svg": "/img/icons.svg#icon-facebook"
+          "svg": "/img/sprite.svg#icon-facebook"
         },
         {
           "href": "#",
           "aria_label": "Laura Bradford Telegram",
-          "svg": "/img/icons.svg#icon-telegram"
+          "svg": "/img/sprite.svg#icon-telegram"
         }
       ]
     },
     {
-      "img": "/img/team/teammate6/teammate6-2x.webp",
+      "img": "../src/images/static/team/teammate6.jpg",
+      "img_1x": "/img/team/teammate6-1x.webp",
+      "img_2x": "/img/team/teammate6-2x.webp",
       "alt": "Photo of a team member Gail Wynand",
       "name": "Gail Wynand",
       "position": "Senior Full Stack Developer",
@@ -330,42 +354,42 @@
         {
           "href": "#",
           "aria_label": "Gail Wynand Twitter",
-          "svg": "/img/icons.svg#icon-twitter"
+          "svg": "/img/sprite.svg#icon-twitter"
         },
         {
           "href": "#",
           "aria_label": "Gail Wynand Facebook",
-          "svg": "/img/icons.svg#icon-facebook"
+          "svg": "/img/sprite.svg#icon-facebook"
         },
         {
           "href": "#",
           "aria_label": "Gail Wynand Telegram",
-          "svg": "/img/icons.svg#icon-telegram"
+          "svg": "/img/sprite.svg#icon-telegram"
         },
         {
           "href": "#",
           "aria_label": "Gail Wynand LinkedIn",
-          "svg": "/img/icons.svg#icon-linkedin"
+          "svg": "/img/sprite.svg#icon-linkedin"
         },
         {
           "href": "#",
           "aria_label": "Gail Wynand Instagram",
-          "svg": "/img/icons.svg#icon-instagram"
+          "svg": "/img/sprite.svg#icon-instagram"
         },
         {
           "href": "#",
           "aria_label": "Gail Wynand YouTube",
-          "svg": "/img/icons.svg#icon-youtube"
+          "svg": "/img/sprite.svg#icon-youtube"
         },
         {
           "href": "#",
           "aria_label": "Gail Wynand TikTok",
-          "svg": "/img/icons.svg#icon-tiktok"
+          "svg": "/img/sprite.svg#icon-tiktok"
         },
         {
           "href": "#",
           "aria_label": "Gail Wynand Discord",
-          "svg": "/img/icons.svg#icon-discord"
+          "svg": "/img/sprite.svg#icon-discord"
         }
       ]
     }
@@ -376,32 +400,24 @@
       "aria_labelledby": "faq-nft",
       "aria_label": "Open FAQ",
       "faq_question": "What are the NFTs?",
-      "svg_plus": "/img/icons.svg#icon-plus",
-      "svg_minus": "/img/icons.svg#icon-minus",
       "faq_answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
     },
     {
       "aria_labelledby": "faq-get",
       "aria_label": "Open FAQ",
       "faq_question": "How do i get NFTs?",
-      "svg_plus": "/img/icons.svg#icon-plus",
-      "svg_minus": "/img/icons.svg#icon-minus",
       "faq_answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
     },
     {
       "aria_labelledby": "faq-buy",
       "aria_label": "Open FAQ",
       "faq_question": "How can we buy your NFTs?",
-      "svg_plus": "/img/icons.svg#icon-plus",
-      "svg_minus": "/img/icons.svg#icon-minus",
       "faq_answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
     },
     {
       "aria_labelledby": "faq-team",
       "aria_label": "Open FAQ",
       "faq_question": "Who are the team behind the project?",
-      "svg_plus": "/img/icons.svg#icon-plus",
-      "svg_minus": "/img/icons.svg#icon-minus",
       "faq_answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
     }
   ]

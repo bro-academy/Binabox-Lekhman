@@ -82,31 +82,35 @@
 
   "event_desc_list": [
     {
-      "url": "/img/icons.svg#icon-logo",
+      "url": "/img/sprite.svg#icon-logo",
       "text": "List name 1"
     },
     {
-      "url": "/img/icons.svg#icon-logo",
+      "url": "/img/sprite.svg#icon-logo",
       "text": "List name 2"
     },
     {
-      "url": "/img/icons.svg#icon-logo",
+      "url": "/img/sprite.svg#icon-logo",
       "text": "List name 3"
     },
     {
-      "url": "/img/icons.svg#icon-logo",
+      "url": "/img/sprite.svg#icon-logo",
       "text": "List name 4"
     }
   ],
 
   "event_desc_imgs": [
     {
-      "url": "/img/basilisks/desktop-xl/basilisks1-2x.webp",
+      "img": "../src/images/static/basilisks/basilisks1.jpg",
+      "img_1x": "/img/basilisks/basilisks1-1x.webp",
+      "img_2x": "/img/basilisks/basilisks1-2x.webp",
       "alt": "Basilisks image 1",
       "figcaption": "Photo caption"
     },
     {
-      "url": "/img/basilisks/desktop-xl/basilisks2-2x.webp",
+      "img": "../src/images/static/basilisks/basilisks2.jpg",
+      "img_1x": "/img/basilisks/basilisks2-1x.webp",
+      "img_2x": "/img/basilisks/basilisks2-2x.webp",
       "alt": "Basilisks image 2",
       "figcaption": "Photo caption"
     }
@@ -134,17 +138,17 @@
     {
       "url": "#",
       "aria_label": "Twitter",
-      "svg": "/img/icons.svg#icon-twitter"
+      "svg": "/img/sprite.svg#icon-twitter"
     },
     {
       "url": "#",
       "aria_label": "Facebook",
-      "svg": "/img/icons.svg#icon-facebook"
+      "svg": "/img/sprite.svg#icon-facebook"
     },
     {
       "url": "#",
       "aria_label": "Instagram",
-      "svg": "/img/icons.svg#icon-instagram"
+      "svg": "/img/sprite.svg#icon-instagram"
     }
   ]
 }

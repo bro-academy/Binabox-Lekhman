@@ -1,17 +1,20 @@
 <section class="event-desc">
-  <img class="event-desc__img-main" src="/img/basilisks/desktop-xl/basilisks-2x.webp" alt="The Basilisks NFT"/>
+  <picture class="event-desc__img-picture">
+    <source srcset="/img/basilisks/basilisks-1x.webp 1x, /img/basilisks/basilisks-2x.webp 2x" type="image/webp"/>
+    <img class="event-desc__img-main" src="../src/images/static/basilisks/basilisks.jpg" alt="The Basilisks NFT" loading="lazy"/>
+  </picture>
   <h2 class="title event-desc__title">The Basilisks NFT</h2>
   <div class="button-accent-l event-desc__category">Gaming</div>
   <div class="event-info event-desc__info">
     <div class="event-info__name">
       <svg width="16" height="16" aria-hidden="true">
-        <use href="/img/icons.svg#icon-user-02"></use>
+        <use href="/img/sprite.svg#icon-user-02"></use>
       </svg>
       <p class="event-info__text">Tony Nguyen</p>
     </div>
     <div class="event-info__time">
       <svg width="16" height="16" aria-hidden="true">
-        <use href="/img/icons.svg#icon-calendar"></use>
+        <use href="/img/sprite.svg#icon-calendar"></use>
       </svg>
       <time class="event-info__text" datetime="2022-06-20">20 Jun 2022</time>
     </div>
@@ -53,7 +56,7 @@
     </blockquote>
     <div class="event-desc__blockquote-info">
       <svg class="event-desc__blockquote-icon" width="16" height="17" aria-hidden="true">
-        <use href="/img/icons.svg#icon-stars-02"></use>
+        <use href="/img/sprite.svg#icon-stars-02"></use>
       </svg>
       <span class="text-small-bold event-desc__blockquote-rate">8.5/10</span>
       <cite class="text-small-bold event-desc__blockquote-cite">Markout Corporation</cite>
@@ -62,7 +65,10 @@
   <div class="event-desc__imgs">
     {% for i in event_desc_imgs %}
       <figure class="event-desc__figure">
-        <img class="event-desc__img" src="{{ i.url }}" alt="{{ i.alt }}"/>
+        <picture class="event-desc__imgs-picture">
+          <source srcset="{{ i.img_1x }} 1x, {{ i.img_2x }} 2x" type="image/webp"/>
+          <img class="event-desc__imgs-item" src="{{ i.img }}" alt="{{ i.alt }}" loading="lazy"/>
+        </picture>
         <figcaption class="event-desc__figcaption">{{ i.figcaption }}</figcaption>
       </figure>
     {% endfor %}

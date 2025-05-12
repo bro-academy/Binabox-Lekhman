@@ -22,7 +22,7 @@
     color: var(--secondary-text-color);
     width: 100%;
     background: transparent
-      // url(../../images/static/icons.svg#chevron-up)
+      // url(../../images/static/sprite.svg#chevron-up)
       url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><polyline points="10,50 70,110 130,50" style="fill:none;stroke:%238B8C8F;stroke-width:15;stroke-linecap:round"/></svg>')
       no-repeat right 15px center;
     background-size: 10px;
@@ -74,7 +74,7 @@
   // &__item:hover,
   // &__item:focus {
   //   outline: none;
-  //   // background-image: url(/img/icons.svg#icon-hover-1), url(/img/icons.svg#icon-hover-2);
+  //   // background-image: url(/img/sprite.svg#icon-hover-1), url(/img/sprite.svg#icon-hover-2);
   //   background-image: url(/img/icon-hover-1.svg), url(/img/icon-hover-2.svg);
   //   background-repeat: no-repeat;
   //   background-position: top left, bottom right;
@@ -88,7 +88,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     outline: none;
-    // background-image: url(/img/icons.svg#icon-hover-1), url(/img/icons.svg#icon-hover-2);
+    // background-image: url(/img/sprite.svg#icon-hover-1), url(/img/sprite.svg#icon-hover-2);
     background-image: url(/img/icon-hover-1.svg), url(/img/icon-hover-2.svg);
     background-repeat: no-repeat;
     background-position: top left, bottom right;

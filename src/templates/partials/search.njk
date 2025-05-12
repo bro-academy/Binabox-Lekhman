@@ -1,9 +1,14 @@
 <search class="search">
   <form class="search__form">
-    <input class="text-small search__input" type="search" name="search" placeholder="{% if search_placeholder %}{{ search_placeholder }}{% endif %}" aria-label="Search through site content"/>
+    <input
+      class="text-small search__input"
+      type="search"
+      name="search"
+      placeholder="Search"
+      aria-label="Search through site content"/>
     <button class="search__button" type="submit" aria-label="Submit button of search form">
       <svg class="search__icon" width="24" height="24" aria-hidden="true">
-        <use href="/img/icons.svg#icon-search"></use>
+        <use href="img/sprite.svg#search-md"></use>
       </svg>
     </button>
   </form>

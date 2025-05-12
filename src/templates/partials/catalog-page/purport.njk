@@ -34,7 +34,7 @@
           <article class="product">
             <div class="img-wrapper">
               <img class="product__img" src="{{ i.img }}" alt="{{ i.alt }}"/>
-              <span class="img-tag{% if i.state === "sold-out" %} img-tag--sold-out{% endif %}">{{ i.tag }}</span>
+              <span class="img-tag{% if i.state === " sold-out" %} img-tag--sold-out{% endif %}">{{ i.tag }}</span>
             </div>
             <p class="product__price">{{ i.price }}</p>
             <h3 class="text-xl" id="{{ i.aria_labelledby }}">
@@ -45,7 +45,7 @@
         <div class="purport__overlay">
           <button class="button button--light-l purport__overlay-button" type="button" aria-labelledby="favourites-btn">
             <svg width="24" height="24" aria-hidden="true">
-              <use href="/img/icons.svg#heart"></use>
+              <use href="/img/sprite.svg#heart"></use>
             </svg>
             <span id="favourites-btn">Favourites</span>
           </button>

@@ -1,7 +1,17 @@
+@use "../base/mixins" as *;
+
+.products-wrapper {
+  overflow: hidden;
+}
+
 .products {
   display: flex;
-  justify-content: center;
   gap: 24px;
+  overflow-x: auto;
+
+  @include mq(desktop) {
+    justify-content: center;
+  }
 
   &__item {
     transition: transform 300ms ease-in-out;
@@ -19,24 +29,44 @@
   background-color: var(--secondary-bg-color);
 
   &__img {
-    height: 324px;
+    min-width: 296px;
     object-fit: cover;
+
+    @include mq(tablet) {
+      min-width: 256px;
+    }
+
+    @include mq(laptop) {
+      min-width: 222px;
+    }
+
+    @include mq(laptop) {
+      min-width: 252px;
+    }
   }
 
   &__price {
     margin-bottom: 8px;
     color: var(--secondary-text-color);
     font-family: 'Bakbak One';
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 1.3; /* 133.333% */
-    letter-spacing: -0.5px;
+
+    @include mq(tablet) {
+      font-size: 36px;
+      letter-spacing: -0.5px;
+    }
   }
 }
 
 .img-wrapper {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+
+  @include mq(tablet) {
+    margin-bottom: 24px;
+  }
 }
 
 .img-tag {
