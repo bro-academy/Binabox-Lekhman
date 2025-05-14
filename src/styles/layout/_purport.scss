@@ -1,31 +1,42 @@
+@use "../base/mixins" as *;
+
 .purport {
   display: flex;
   flex-direction: column;
   grid-gap: 32px;
   min-width: 328px;
   max-width: 1024px;
+  width: 100%;
 
   &__header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
-  &__search-block {
+  &__select-block {
     display: flex;
-    grid-gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(tablet) {
+      flex-grow: 1;
+    }
   }
 
   &__select {
     border: 2px solid var(--border-color);
-    padding: 10px 12px;
+    padding: 10px 24px;
+    width: 145px;
+    height: 52px;
     color: var(--secondary-text-color);
-    width: 100%;
-    background: transparent
-      // url(../../images/static/sprite.svg#chevron-up)
-      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><polyline points="10,50 70,110 130,50" style="fill:none;stroke:%238B8C8F;stroke-width:15;stroke-linecap:round"/></svg>')
-      no-repeat right 15px center;
-    background-size: 10px;
+    background: transparent url(/img/icon-chevron-down.svg) no-repeat right 15px center;
+    background-size: 25px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -41,17 +52,47 @@
     outline: none;
   }
 
+  &__search {
+    @include mq(mobile-tablet-only) {
+      order: unset;
+      margin-bottom: 0;
+    }
+
+    @include mq(tablet) {
+      width: unset;
+      min-width: 226px;
+    }
+
+    @include mq(laptop) {
+      min-width: 296px;
+    }
+  }
+
+  &__search-input {
+    background-color: var(--secondary-bg-color);
+
+    @include mq(laptop) {
+      width: 100%;
+    }
+  }
+
   &__tags-icon {
     margin-left: 8px;
   }
 
   &__tags-management {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
     gap: 16px;
     padding: 16px;
     background-color: var(--secondary-bg-color);
+
+    @include mq(tablet) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &__tags-list {
@@ -62,8 +103,15 @@
   &__products {
     display: grid;
     gap: 32px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+
+    @include mq(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq(desktop) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
   }
 
   &__item {
@@ -71,14 +119,14 @@
     overflow: hidden;
   }
 
-  // &__item:hover,
-  // &__item:focus {
-  //   outline: none;
-  //   // background-image: url(/img/sprite.svg#icon-hover-1), url(/img/sprite.svg#icon-hover-2);
-  //   background-image: url(/img/icon-hover-1.svg), url(/img/icon-hover-2.svg);
-  //   background-repeat: no-repeat;
-  //   background-position: top left, bottom right;
-  // }
+  &__img {
+    width: 100%;
+    min-height: 32em;
+
+    @include mq(desktop) {
+      min-height: 348px;
+  }
+}
 
   &__overlay {
     position: absolute;
@@ -88,7 +136,6 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     outline: none;
-    // background-image: url(/img/sprite.svg#icon-hover-1), url(/img/sprite.svg#icon-hover-2);
     background-image: url(/img/icon-hover-1.svg), url(/img/icon-hover-2.svg);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
