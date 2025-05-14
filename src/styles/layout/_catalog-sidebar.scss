@@ -1,9 +1,24 @@
+@use "../base/mixins" as *;
+
 .catalog-content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 64px;
+  padding: 0 16px 64px;
 
+  @include mq(tablet) {
+    padding: 32px 24px 64px;
+  }
+
+  @include mq(laptop) {
+    padding:64px;
+  }
+
+  @include mq(mobile-tablet-only) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .filters {
@@ -66,4 +81,74 @@
 
 .filters__section:open .filters__icon-minus {
   display: block;
+}
+
+// =============== <<< filter-drop >>> ==============
+
+.filter {
+  position: relative;
+
+  @include mq(mobile-tablet-only) {
+    width: 100%;
+  }
+
+  .filter--active & {
+    position: absolute;
+    inset: 0;
+    background-color: var(--bg-color);
+  }
+}
+
+.filter-opener {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  border: 2px solid var(--border-color);
+
+  @include mq(laptop) {
+    @include visually-hidden;
+  }
+
+  .filter--active & {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    background-color: var(--bg-color);
+  }
+}
+
+.filter-drop {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: var(--bg-color);
+  z-index: 2;
+  transition: all 1000ms ease-in-out;
+  opacity: 0;
+  overflow-y: auto;
+
+  @include mq(laptop) {
+    height: auto;
+    width: 100%;
+    background: none;
+    position: static;
+    opacity: 1;
+  }
+
+  .filter--active & {
+    opacity: 1;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    width: unset;
+    height: calc(100vh - 80px);
+  }
+}
+
+.filter--active {
+  overflow: hidden;
 }

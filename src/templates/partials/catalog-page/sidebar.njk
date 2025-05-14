@@ -1,38 +1,49 @@
-<div>
-  <ul class="filters">
-    {% for i in filters_section %}
-      <li class="filters__item">
-        <details class="filters__section">
-          <summary class="filters__header" aria-labelledby="{{ i.aria_labelledby }}">
-            <h3 class="title-small" id="{{ i.aria_labelledby }}">{{ i.title }}</h3>
-            <div class="filters__button button-icon-m" aria-hidden="true">
-              <svg class="filters__icon-plus" width="16" height="17" aria-hidden="true">
-                <use href="{{ i.svg_plus }}"></use>
-              </svg>
-              <svg class="filters__icon-minus" width="16" height="17" aria-hidden="true">
-                <use href="{{ i.svg_minus }}"></use>
-              </svg>
-            </div>
-          </summary>
-          <ul class="filters__list">
-            {% for e in i.filters_list %}
-              <li class="filters__list-item">
-                <input class="{% if e.type === "radio" %}custom-radio{% endif %}{% if e.type === "checkbox" %}custom-checkbox{% endif %}" type="{% if e.type === "radio" %}radio{% endif %}{% if e.type === "checkbox" %}checkbox{% endif %}" id="{{ e.filter_for }}" {% if e.type === "radio" %} value="{{ e.value }}" {% endif %} {% if e.type === "radio" %} name="{{ e.name }}" {% endif %} {% if e.checked === "checked" %} checked {% endif %}/>
-                <label class="text-small" for="{{ e.filter_for }}">
-                  {{ e.parameter }}
-                </label>
-              </li>
-            {% endfor %}
-          </ul>
-        </details>
-      </li>
-    {% endfor %}
-  </ul>
-  <button
-    class="button button--primary filters__button-submit"
-    type="submit"
-    id="submit-btn-catalog"
-    aria-labelledby="submit-btn-catalog">
-    Apply
-  </button>
+<div class="filter">
+  <div class="filter-opener">
+    <h3 class="filter-opener__text">Filters</h3>
+    <button class="filter-burger js-filter" type="button" aria-label="Filter menu for Catalog page">
+      <span class="filter-burger-line"></span>
+      <span class="filter-burger-line"></span>
+      <span class="filter-burger-line"></span>
+    </button>
+  </div>
+  <div class="filter-drop">
+    <ul class="filters">
+      {% for i in filters_section %}
+        <li class="filters__item">
+          <details class="filters__section">
+            <summary class="filters__header" aria-labelledby="{{ i.aria_labelledby }}">
+              <h3 class="title-small" id="{{ i.aria_labelledby }}">{{ i.title }}</h3>
+              <div class="filters__button button-icon-m" aria-hidden="true">
+                <svg class="filters__icon-plus" width="16" height="17" aria-hidden="true">
+                  <use href="{{ i.svg_plus }}"></use>
+                </svg>
+                <svg class="filters__icon-minus" width="16" height="17" aria-hidden="true">
+                  <use href="{{ i.svg_minus }}"></use>
+                </svg>
+              </div>
+            </summary>
+            <ul class="filters__list">
+              {% for e in i.filters_list %}
+                <li class="filters__list-item">
+                  <input class="{% if e.type === "radio" %}custom-radio{% endif %}{% if e.type === "checkbox" %}custom-checkbox{% endif %}" type="{% if e.type === "radio" %}radio{% endif %}{% if e.type === "checkbox" %}checkbox{% endif %}" id="{{ e.filter_for }}" {% if e.type === "radio" %} value="{{ e.value }}" {% endif %} {% if e.type === "radio" %} name="{{ e.name }}" {% endif %} {% if e.checked === "checked" %} checked {% endif %}/>
+                  <label class="text-small" for="{{ e.filter_for }}">
+                    {{ e.parameter }}
+                  </label>
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        </li>
+      {% endfor %}
+    </ul>
+    <button
+      class="button button--primary filters__button-submit"
+      type="submit"
+      id="submit-btn-catalog"
+      aria-labelledby="submit-btn-catalog">
+      Apply
+    </button>
+  </div>
 </div>
+

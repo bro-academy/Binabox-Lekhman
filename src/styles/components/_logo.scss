@@ -7,6 +7,14 @@
   flex-grow: 1;
 }
 
+.header__logo {
+  margin-left: 16px;
+
+  @include mq(laptop) {
+    margin-left: 0;
+  }
+}
+
 .logo__icon-text-white {
   @include mq(mobile-only) {
     @include visually-hidden
